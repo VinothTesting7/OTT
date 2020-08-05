@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test1">
+    <classes>
+    <!-- Vinoth suite -->
+    
+     
+    
+        <class name="com.viacom.uinavigation.VerifyShowDetailsPageFunctionalityTest"/>                
+        <class name="com.viacom.uinavigation.VerifyShowDetailsPageEditorialSectionUITest"/>       
+        <class name="com.viacom.ebook.VerifyBookDetailsPageFunctionalityTest"/>            
+        <class name="com.viacom.ebook.VerifyBookReaderFunctionalityTest"/>                  
+        <class name="com.viacom.vodplayer.VerifyVodPlayerFunctionalityTest"/>       
+        <class name="com.viacom.vodplayer.VerifyVodPlayerPlaylistUITest"/>      
+        <class name="com.viacom.vodplayer.VerifyForwardRewindButtonFunctionalityTest"/>
+        <class name="com.viacom.vodplayer.VerifyVodPlayerFavoritesRelatedFunctionality"/>   
+        <class name="com.viacom.vodplayer.VerifyVodPlayerPlaylistForFavoritedEpisode"/> 
+        <class name="com.viacom.downloads.VerifyDownloadButtonPostBookPreviewTest"/> 
+        <class name="com.viacom.downloads.VerifyEpisodeDownloadQualityTest"/>       
+        <class name="com.viacom.downloads.VerifyAudioDownloadQualityTest"/>  
+        <class name="com.viacom.downloads.VerifyStorageSpaceBeforeAfterDownloadTest"/>   
+        <class name="com.viacom.vodplayer.VerifyVodPlayerLanguageSelectionPopUpFunctionality"/>  
+        <class name="com.viacom.vodplayer.VerifyVodPlayerSettingsFunctionalityTest"/>                
+        <class name="com.viacom.smoketestscripts.VerifyLivePlayerSettingsFunctionalityTest"/>  
+        <class name="com.viacom.smoketestscripts.VerifyCoachCardsFunctionality"/>  
+     <class name="com.viacom.profile.VerifyEditProfileFunctionalitytest"/>    
+         
+         
+        <!--     Sign Up related                   
+        <class name="com.viacom.profile.VootKidsCreateProfileScreenFunctionalityTest"/>                
+        <class name="com.viacom.profile.VootKidsCreateProfile"/>      
+        <class name="com.viacom.profile.VerifyEditProfileFunctionalitytest"/>                      
+         --> 
+         
+        <class name="com.viacom.profile.VerifySwitchProfileFunctionalityTest"/> 
+        <class name="com.viacom.ebook.VerifyFavoritePopUpFunctionalityInEbookPageInfoTest"/> 
+        <class name="com.viacom.ebook.VerifyFavoriteIconFunctionalityInEbookInfoPageTest"/> 
+      
+        <class name="com.viacom.smoketestscripts.VerifyMovieInfoPageFunctionalityTest"/>
+
+        <class name="com.viacom.vodplayer.VerifyVodPlayerDownloadsFunctionalityTest"/> 
+        <class name="com.viacom.vodplayer.VerifyDownloadIconInPlayerFunctionalityTest"/> 
+        <class name="com.viacom.vodplayer.VerifyFavoriteIconFunctionalityInAudioEbookPlayerTest"/> 
+        <class name="com.viacom.vodplayer.VerifyFavoriteIconFunctionalityInPlayerTest"/>  
+        <class name="com.viacom.vodplayer.VerifyFavoritePopUpFunctionalityInAudioAndEbookTest"/> 
+        <class name="com.viacom.vodplayer.VerifyFavoritePopUpFunctionalityInPlayerTest"/>  
+          <class name="com.viacom.registration.VerifyGoogleLoginOptionFunctionalityTest"/>  
+         <class name="com.viacom.smoketestscripts.VerifyCoachCardsFunctionality"/>
+        <!--     From Suite 2  -->
+      
+      
+      
+    </classes>
+  </test>
+  
+</suite> 

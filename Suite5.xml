@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test1">
+    <classes>
+    
+	  <class name="com.viacom.lastviewed.VerifyLastViewedAudioSettings" />
+	  <class name="com.viacom.parentzone.VerifyActivitySegmentedTab" />
+	  <class name="com.viacom.parentzone.VerifyBedTimeForProfiles" />
+	  <class name="com.viacom.lastviewed.VerifyLastViewedMoviesResume" />
+	  <class name="com.viacom.lastviewed.VerifyLastViewedMoviesResumeMyStuff" />
+	  <class name="com.viacom.chromecast.VerifyChromecastMovie" />
+	  <class name="com.viacom.lastviewed.VerifyLastViewedBooks" />
+	  <class name="com.viacom.lastviewed.VerifyLastViewedMovies" />
+	  <class name="com.viacom.lastviewed.VerifyLastViewedMoviesMetaData" />
+	  <class name="com.viacom.movies.VerifyMovies" />
+	  <class name="com.viacom.movies.VerifyMoviePlayerFunctionalityTest" />
+    
+      <class name="com.viacom.parentzone.VerifyRecentActivityCardBehavior" />
+	  <class name="com.viacom.parentzone.VerifyStatsInParentZone" />
+	  <class name="com.viacom.audioplayer.VerifyPlayback" />
+      <class name="com.viacom.carousal.VerifyCarouselMetadataAndSwipeFeature"/>
+      <class name="com.viacom.lastviewed.VerifyLastViewedUiMyStuffWatch"/>
+	  <class name="com.viacom.vodplayer.VerifyEpisodesTray"/>
+      <class name="com.viacom.downloads.VerifyNoDownloads"/>
+      <class name="com.viacom.ebook.VerifyReaderPreviewAndRead"/>    
+      <class name="com.viacom.audioplayer.VerifyAudioPlayerSettings"/>
+      <class name="com.viacom.smoketestscripts.VerifyRewards"/> 
+      <class name="com.viacom.uinavigation.VerifyCharacterShowCard"/>
+      <class name="com.viacom.smoketestscripts.VerifyCharactersInCharactersTray"/>
+	  <class name="com.viacom.downloads.VerifyDownloads"/>
+	  <class name="com.viacom.favourites.VerifyFavouritesTrayAndIcon"/> 
+	  <class name="com.viacom.ebook.VerifyEbookDefaults"/>
+      <class name="com.viacom.downloads.VerifyCellularDownloadsOFFState"/>     
+      <class name="com.viacom.favourites.VerifyFavouriteAddedAudioAndEpisode"/> 
+      <class name="com.viacom.favourites.VerifyFavouriteAddedBookAndNavigation"/>
+      <class name="com.viacom.smoketestscripts.VerifyNotification"/>
+      <class name="com.viacom.vodplayer.VerifyVODContentConfigurableTrays"/> 
+      <class name="com.viacom.parentzone.VerifyActivitySegmentedTab"/>
+      <class name="com.viacom.settings.VerifyDeviceSettingsAfterLogout"/> 
+      <class name="com.viacom.lastviewed.VerifyLastViewedEpisodes"/> 
+	  <class name="com.viacom.lastviewed.VerifyLastViewedEpisodesOrder"/> 
+	  <class name="com.viacom.lastviewed.VerifyLastViewedEpisodesSettings"/> 
+	  <class name="com.viacom.lastviewed.VerifyLastViewedBooks"/> 
+	  <class name="com.viacom.lastviewed.VerifyLastViewedBooksOrder"/> 
+	  <class name="com.viacom.lastviewed.VerifyLastViewedBooksSettings"/> 
+	  <class name="com.viacom.lastviewed.VerifyLastViewedAudio"/> 
+	  <class name="com.viacom.lastviewed.VerifyLastViewedAudioOrder"/> 
+	  <class name="com.viacom.lastviewed.VerifyLastViewedAudioSettings"/> 
+	  <class name="com.viacom.lastviewed.VerifyLastViewedEpisodesResume"/> 
+	  <class name="com.viacom.lastviewed.VerifyLastViewedAudioResume"/> 
+      
+<!-- Tanisha suite -->
+<!-- 
+  
+
+ -->	  
+    </classes>
+  </test>
+  
+</suite> 

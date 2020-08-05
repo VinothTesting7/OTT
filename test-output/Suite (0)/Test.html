@@ -1,0 +1,2100 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/48/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 15 11:31:00 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>9840 seconds (9840323 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.viacom.smoketestscripts.DownloadCancelFeatureTest.DownloadCancelFeature()'><b>DownloadCancelFeature</b><br>Test class: com.viacom.smoketestscripts.DownloadCancelFeatureTest<br>Parameters: {Password=vinoth@123, Runmode=Y, Email=booksdownloads@gmail.com}</td>
+<td><div><pre>java.lang.AssertionError: Login Failed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.DownloadCancelFeatureTest.DownloadCancelFeature(DownloadCancelFeatureTest.java:91)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace982422105", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace982422105'><pre>java.lang.AssertionError: Login Failed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.DownloadCancelFeatureTest.DownloadCancelFeature(DownloadCancelFeatureTest.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>303</td>
+<td>com.viacom.smoketestscripts.DownloadCancelFeatureTest@63eef88a</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyEpisodesUIFunctionalityTest.EpisodesUIFunctionality()'><b>EpisodesUIFunctionality</b><br>Test class: com.viacom.smoketestscripts.VerifyEpisodesUIFunctionalityTest<br>Parameters: {Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}</td>
+<td><div><pre>java.lang.AssertionError: Login Failed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.VerifyEpisodesUIFunctionalityTest.EpisodesUIFunctionality(VerifyEpisodesUIFunctionalityTest.java:87)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1209953760", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1209953760'><pre>java.lang.AssertionError: Login Failed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.VerifyEpisodesUIFunctionalityTest.EpisodesUIFunctionality(VerifyEpisodesUIFunctionalityTest.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>301</td>
+<td>com.viacom.smoketestscripts.VerifyEpisodesUIFunctionalityTest@3370f42</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.SearchFunctionalityTabHilightingTest.SearchFunctionalityTabHilighting()'><b>SearchFunctionalityTabHilighting</b><br>Test class: com.viacom.smoketestscripts.SearchFunctionalityTabHilightingTest<br>Parameters: {Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}</td>
+<td><div><pre>java.lang.AssertionError: Login Failed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.SearchFunctionalityTabHilightingTest.SearchFunctionalityTabHilighting(SearchFunctionalityTabHilightingTest.java:66)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace182308253", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace182308253'><pre>java.lang.AssertionError: Login Failed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.SearchFunctionalityTabHilightingTest.SearchFunctionalityTabHilighting(SearchFunctionalityTabHilightingTest.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>263</td>
+<td>com.viacom.smoketestscripts.SearchFunctionalityTabHilightingTest@479ceda0</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyEditProfileFavourites.VerifyCharactersInCharactersTray()'><b>VerifyCharactersInCharactersTray</b><br>Test class: com.viacom.smoketestscripts.VerifyEditProfileFavourites<br>Parameters: {Password=vinoth@123, Runmode=Y, Email=booksdownloads@gmail.com}</td>
+<td><div><pre>java.lang.AssertionError: Login Failed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.VerifyEditProfileFavourites.VerifyCharactersInCharactersTray(VerifyEditProfileFavourites.java:79)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace333605979", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace333605979'><pre>java.lang.AssertionError: Login Failed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.VerifyEditProfileFavourites.VerifyCharactersInCharactersTray(VerifyEditProfileFavourites.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>273</td>
+<td>com.viacom.smoketestscripts.VerifyEditProfileFavourites@352c1b98</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyDownloadEpisodeFunctionalityTest.VerifyDownloadEpisodeFunctionality()'><b>VerifyDownloadEpisodeFunctionality</b><br>Test class: com.viacom.smoketestscripts.VerifyDownloadEpisodeFunctionalityTest<br>Parameters: {Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}</td>
+<td><div><pre>java.lang.AssertionError: Login Failed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.VerifyDownloadEpisodeFunctionalityTest.VerifyDownloadEpisodeFunctionality(VerifyDownloadEpisodeFunctionalityTest.java:73)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2048298885", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2048298885'><pre>java.lang.AssertionError: Login Failed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.VerifyDownloadEpisodeFunctionalityTest.VerifyDownloadEpisodeFunctionality(VerifyDownloadEpisodeFunctionalityTest.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>260</td>
+<td>com.viacom.smoketestscripts.VerifyDownloadEpisodeFunctionalityTest@332729ad</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyDownloadsCountunderParentZoneTest.VerifyDownloadsCountunderParentZone()'><b>VerifyDownloadsCountunderParentZone</b><br>Test class: com.viacom.smoketestscripts.VerifyDownloadsCountunderParentZoneTest<br>Parameters: {Password=vinoth@123, Runmode=Y, Email=ifocusauto@gmail.com}</td>
+<td><div><pre>java.lang.AssertionError: Login Failed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.VerifyDownloadsCountunderParentZoneTest.VerifyDownloadsCountunderParentZone(VerifyDownloadsCountunderParentZoneTest.java:106)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1905490683", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1905490683'><pre>java.lang.AssertionError: Login Failed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.VerifyDownloadsCountunderParentZoneTest.VerifyDownloadsCountunderParentZone(VerifyDownloadsCountunderParentZoneTest.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>309</td>
+<td>com.viacom.smoketestscripts.VerifyDownloadsCountunderParentZoneTest@418c5a9c</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.ValidateListenTrays.VerifyTraysinListentab()'><b>VerifyTraysinListentab</b><br>Test class: com.viacom.smoketestscripts.ValidateListenTrays<br>Parameters: {Password=rishrosh100, Runmode=Y, Email=rishrosh@gmail.com
+
+}</td>
+<td><div><pre>java.lang.AssertionError: Login Failed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.ValidateListenTrays.VerifyTraysinListentab(ValidateListenTrays.java:70)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2140172891", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2140172891'><pre>java.lang.AssertionError: Login Failed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.ValidateListenTrays.VerifyTraysinListentab(ValidateListenTrays.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>265</td>
+<td>com.viacom.smoketestscripts.ValidateListenTrays@5a5338df</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.AudioBookDetailUITest.audioBookUI()'><b>audioBookUI</b><br>Test class: com.viacom.smoketestscripts.AudioBookDetailUITest<br>Parameters: {Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}</td>
+<td><div><pre>java.lang.AssertionError: Login Failed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.AudioBookDetailUITest.audioBookUI(AudioBookDetailUITest.java:89)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1008010093", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1008010093'><pre>java.lang.AssertionError: Login Failed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.AudioBookDetailUITest.audioBookUI(AudioBookDetailUITest.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>299</td>
+<td>com.viacom.smoketestscripts.AudioBookDetailUITest@9573584</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.audioPlayerFunctionalityTest.audioPlayerFunctionality()'><b>audioPlayerFunctionality</b><br>Test class: com.viacom.smoketestscripts.audioPlayerFunctionalityTest<br>Parameters: {Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}</td>
+<td><div><pre>java.lang.AssertionError: Login Failed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.audioPlayerFunctionalityTest.audioPlayerFunctionality(audioPlayerFunctionalityTest.java:108)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace630775148", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace630775148'><pre>java.lang.AssertionError: Login Failed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.audioPlayerFunctionalityTest.audioPlayerFunctionality(audioPlayerFunctionalityTest.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>319</td>
+<td>com.viacom.smoketestscripts.audioPlayerFunctionalityTest@302f7971</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyEBooksDownloadsFunctionalityTest.downloadTest()'><b>downloadTest</b><br>Test class: com.viacom.smoketestscripts.VerifyEBooksDownloadsFunctionalityTest<br>Parameters: {Password=vinoth@123, Runmode=Y, Email=booksdownloads@gmail.com}</td>
+<td><div><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceDownloadQuality(DownloadsPageV2.java:332)
+	at com.viacom.smoketestscripts.VerifyEBooksDownloadsFunctionalityTest.downloadTest(VerifyEBooksDownloadsFunctionalityTest.java:77)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace490219784", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace490219784'><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceDownloadQuality(DownloadsPageV2.java:332)
+	at com.viacom.smoketestscripts.VerifyEBooksDownloadsFunctionalityTest.downloadTest(VerifyEBooksDownloadsFunctionalityTest.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>156</td>
+<td>com.viacom.smoketestscripts.VerifyEBooksDownloadsFunctionalityTest@7b8b43c7</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.AudioPlayerUparrowfunctionalityTest.inlineAudioFunction()'><b>inlineAudioFunction</b><br>Test class: com.viacom.smoketestscripts.AudioPlayerUparrowfunctionalityTest<br>Parameters: {Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}</td>
+<td><div><pre>java.lang.AssertionError: Login Failed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.AudioPlayerUparrowfunctionalityTest.inlineAudioFunction(AudioPlayerUparrowfunctionalityTest.java:103)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1942160794", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1942160794'><pre>java.lang.AssertionError: Login Failed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.AudioPlayerUparrowfunctionalityTest.inlineAudioFunction(AudioPlayerUparrowfunctionalityTest.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>321</td>
+<td>com.viacom.smoketestscripts.AudioPlayerUparrowfunctionalityTest@6057aebb</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyVodPlayerFunctionalityTest.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyVodPlayerFunctionalityTest<br>Parameters: {Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}</td>
+<td><div><pre>java.lang.AssertionError: Duration watched is not displayed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyVodPlayerFunctionalityTest.loginTest(VerifyVodPlayerFunctionalityTest.java:227)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace999292983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace999292983'><pre>java.lang.AssertionError: Duration watched is not displayed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyVodPlayerFunctionalityTest.loginTest(VerifyVodPlayerFunctionalityTest.java:227)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>170</td>
+<td>com.viacom.smoketestscripts.VerifyVodPlayerFunctionalityTest@21129f1f</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyForwardRewindButtonFunctionalityTest.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyForwardRewindButtonFunctionalityTest<br>Parameters: {Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}</td>
+<td><div><pre>java.lang.AssertionError: Not able to click on watch tab
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyForwardRewindButtonFunctionalityTest.loginTest(VerifyForwardRewindButtonFunctionalityTest.java:61)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace931993661", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace931993661'><pre>java.lang.AssertionError: Not able to click on watch tab
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyForwardRewindButtonFunctionalityTest.loginTest(VerifyForwardRewindButtonFunctionalityTest.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>112</td>
+<td>com.viacom.smoketestscripts.VerifyForwardRewindButtonFunctionalityTest@5a9f4771</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyVodPlayerPlaylistUITest.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyVodPlayerPlaylistUITest<br>Parameters: {Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}</td>
+<td><div><pre>java.lang.AssertionError: Not able to click on watch tab
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyVodPlayerPlaylistUITest.loginTest(VerifyVodPlayerPlaylistUITest.java:95)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace124834889", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace124834889'><pre>java.lang.AssertionError: Not able to click on watch tab
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyVodPlayerPlaylistUITest.loginTest(VerifyVodPlayerPlaylistUITest.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>164</td>
+<td>com.viacom.smoketestscripts.VerifyVodPlayerPlaylistUITest@282cb7c7</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyVodPlayerFavoritesRelatedFunctionality.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyVodPlayerFavoritesRelatedFunctionality<br>Parameters: {Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}</td>
+<td><div><pre>java.lang.AssertionError: Not able to click on watch tab
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyVodPlayerFavoritesRelatedFunctionality.loginTest(VerifyVodPlayerFavoritesRelatedFunctionality.java:71)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2104563865", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2104563865'><pre>java.lang.AssertionError: Not able to click on watch tab
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyVodPlayerFavoritesRelatedFunctionality.loginTest(VerifyVodPlayerFavoritesRelatedFunctionality.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>114</td>
+<td>com.viacom.smoketestscripts.VerifyVodPlayerFavoritesRelatedFunctionality@7d898981</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyVodPlayerPlaylistForFavoritedEpisode.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyVodPlayerPlaylistForFavoritedEpisode<br>Parameters: {Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}</td>
+<td><div><pre>java.lang.AssertionError: Not able to click on watch tab
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyVodPlayerPlaylistForFavoritedEpisode.loginTest(VerifyVodPlayerPlaylistForFavoritedEpisode.java:73)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace247733794", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace247733794'><pre>java.lang.AssertionError: Not able to click on watch tab
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyVodPlayerPlaylistForFavoritedEpisode.loginTest(VerifyVodPlayerPlaylistForFavoritedEpisode.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>114</td>
+<td>com.viacom.smoketestscripts.VerifyVodPlayerPlaylistForFavoritedEpisode@48d61b48</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyCoachCardsFunctionality.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyCoachCardsFunctionality<br>Parameters: {Password=vinoth@123, Runmode=Y, Email=ifocusauto@gmail.com}</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C\:\\android-sdk-windows\\platform-tools\\adb.exe -P 5037 -s b953954 shell pm clear com.viacom18.vootkids&apos; exited with code 1&apos;; Stderr: &apos;Error: java.lang.SecurityException: PID 16803 does not have permission android.permission.CLEAR_APP_USER_DATA to clear data of package com.viacom18.vootkids&apos;; Code: &apos;1&apos;
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T15:15:08.936Z&apos;
+System info: host: &apos;IFOCUSODC-PC30&apos;, ip: &apos;192.168.1.146&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {BROWSER_NAME: Android, VERSION: 8.1.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, databaseEnabled: false, desired: {BROWSER_NAME: Android, VERSION: 8.1.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, deviceName: Oppo A3S, fullReset: false, newCommandTimeout: 300, noReset: true, platformName: android, udid: b953954, unlockKey: 1111, unlockType: pin}, deviceManufacturer: OPPO, deviceModel: CPH1803, deviceName: b953954, deviceScreenSize: 720x1520, deviceUDID: b953954, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 300, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 8.1.0, takesScreenshot: true, udid: b953954, unlockKey: 1111, unlockType: pin, warnings: {}, webStorageEnabled: false}
+Session ID: 87fbf3d3-9186-4492-a485-93e58ac7e4e6
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at io.appium.java_client.InteractsWithApps.resetApp(InteractsWithApps.java:93)
+	at com.viacom.smoketestscripts.VerifyCoachCardsFunctionality.loginTest(VerifyCoachCardsFunctionality.java:113)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1732916370", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1732916370'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C\:\\android-sdk-windows\\platform-tools\\adb.exe -P 5037 -s b953954 shell pm clear com.viacom18.vootkids&apos; exited with code 1&apos;; Stderr: &apos;Error: java.lang.SecurityException: PID 16803 does not have permission android.permission.CLEAR_APP_USER_DATA to clear data of package com.viacom18.vootkids&apos;; Code: &apos;1&apos;
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T15:15:08.936Z&apos;
+System info: host: &apos;IFOCUSODC-PC30&apos;, ip: &apos;192.168.1.146&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {BROWSER_NAME: Android, VERSION: 8.1.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, databaseEnabled: false, desired: {BROWSER_NAME: Android, VERSION: 8.1.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, deviceName: Oppo A3S, fullReset: false, newCommandTimeout: 300, noReset: true, platformName: android, udid: b953954, unlockKey: 1111, unlockType: pin}, deviceManufacturer: OPPO, deviceModel: CPH1803, deviceName: b953954, deviceScreenSize: 720x1520, deviceUDID: b953954, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 300, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 8.1.0, takesScreenshot: true, udid: b953954, unlockKey: 1111, unlockType: pin, warnings: {}, webStorageEnabled: false}
+Session ID: 87fbf3d3-9186-4492-a485-93e58ac7e4e6
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at io.appium.java_client.InteractsWithApps.resetApp(InteractsWithApps.java:93)
+	at com.viacom.smoketestscripts.VerifyCoachCardsFunctionality.loginTest(VerifyCoachCardsFunctionality.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>170</td>
+<td>com.viacom.smoketestscripts.VerifyCoachCardsFunctionality@68d279ec</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyShowDetailsPageFunctionalityTest.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyShowDetailsPageFunctionalityTest<br>Parameters: {Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}</td>
+<td><div><pre>java.lang.AssertionError: Not able to click on watch tab
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyShowDetailsPageFunctionalityTest.loginTest(VerifyShowDetailsPageFunctionalityTest.java:84)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1661211216", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1661211216'><pre>java.lang.AssertionError: Not able to click on watch tab
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyShowDetailsPageFunctionalityTest.loginTest(VerifyShowDetailsPageFunctionalityTest.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>144</td>
+<td>com.viacom.smoketestscripts.VerifyShowDetailsPageFunctionalityTest@258d79be</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyShowDetailsPageEditorialSectionUITest.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyShowDetailsPageEditorialSectionUITest<br>Parameters: {Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}</td>
+<td><div><pre>java.lang.AssertionError: Not able to click on watch tab
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyShowDetailsPageEditorialSectionUITest.loginTest(VerifyShowDetailsPageEditorialSectionUITest.java:69)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace972718994", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace972718994'><pre>java.lang.AssertionError: Not able to click on watch tab
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyShowDetailsPageEditorialSectionUITest.loginTest(VerifyShowDetailsPageEditorialSectionUITest.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>102</td>
+<td>com.viacom.smoketestscripts.VerifyShowDetailsPageEditorialSectionUITest@14f9390f</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyBookDetailsPageFunctionalityTest.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyBookDetailsPageFunctionalityTest<br>Parameters: {Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}</td>
+<td><div><pre>java.lang.AssertionError: Not able to click on read tab
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyBookDetailsPageFunctionalityTest.loginTest(VerifyBookDetailsPageFunctionalityTest.java:76)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2145676124", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2145676124'><pre>java.lang.AssertionError: Not able to click on read tab
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyBookDetailsPageFunctionalityTest.loginTest(VerifyBookDetailsPageFunctionalityTest.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>114</td>
+<td>com.viacom.smoketestscripts.VerifyBookDetailsPageFunctionalityTest@6c0d7c83</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyAudioBooksDownloadsFunctionalityTest.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyAudioBooksDownloadsFunctionalityTest<br>Parameters: {Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}</td>
+<td><div><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceAudioDownloadQuality(DownloadsPageV2.java:251)
+	at com.viacom.smoketestscripts.VerifyAudioBooksDownloadsFunctionalityTest.loginTest(VerifyAudioBooksDownloadsFunctionalityTest.java:75)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1974684550", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1974684550'><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceAudioDownloadQuality(DownloadsPageV2.java:251)
+	at com.viacom.smoketestscripts.VerifyAudioBooksDownloadsFunctionalityTest.loginTest(VerifyAudioBooksDownloadsFunctionalityTest.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>156</td>
+<td>com.viacom.smoketestscripts.VerifyAudioBooksDownloadsFunctionalityTest@5965be2d</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyAudioDownloadsProgressFunctionalityTest.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyAudioDownloadsProgressFunctionalityTest<br>Parameters: {Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}</td>
+<td><div><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceDownloadQuality(DownloadsPageV2.java:332)
+	at com.viacom.smoketestscripts.VerifyAudioDownloadsProgressFunctionalityTest.loginTest(VerifyAudioDownloadsProgressFunctionalityTest.java:76)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1783206154", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1783206154'><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceDownloadQuality(DownloadsPageV2.java:332)
+	at com.viacom.smoketestscripts.VerifyAudioDownloadsProgressFunctionalityTest.loginTest(VerifyAudioDownloadsProgressFunctionalityTest.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>134</td>
+<td>com.viacom.smoketestscripts.VerifyAudioDownloadsProgressFunctionalityTest@409c54f</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyAudioBooksDownloadsInterruptionFunctionality.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyAudioBooksDownloadsInterruptionFunctionality<br>Parameters: {Password=vinoth@123, Runmode=Y, Email=audiodownloads@gmail.com}</td>
+<td><div><pre>java.lang.AssertionError: Failed to logout
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.logout(HomePageV2.java:1634)
+	at com.viacom.smoketestscripts.VerifyAudioBooksDownloadsInterruptionFunctionality.loginTest(VerifyAudioBooksDownloadsInterruptionFunctionality.java:60)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace447167861", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace447167861'><pre>java.lang.AssertionError: Failed to logout
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.logout(HomePageV2.java:1634)
+	at com.viacom.smoketestscripts.VerifyAudioBooksDownloadsInterruptionFunctionality.loginTest(VerifyAudioBooksDownloadsInterruptionFunctionality.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>194</td>
+<td>com.viacom.smoketestscripts.VerifyAudioBooksDownloadsInterruptionFunctionality@3e74829</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyAudioBooksDownloadsLockUnlockInterruptionFunctionality.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyAudioBooksDownloadsLockUnlockInterruptionFunctionality<br>Parameters: {Password=vinoth@123, Runmode=Y, Email=audiodownloads@gmail.com}</td>
+<td><div><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceAudioDownloadQuality(DownloadsPageV2.java:251)
+	at com.viacom.smoketestscripts.VerifyAudioBooksDownloadsLockUnlockInterruptionFunctionality.loginTest(VerifyAudioBooksDownloadsLockUnlockInterruptionFunctionality.java:60)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1117274221", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1117274221'><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceAudioDownloadQuality(DownloadsPageV2.java:251)
+	at com.viacom.smoketestscripts.VerifyAudioBooksDownloadsLockUnlockInterruptionFunctionality.loginTest(VerifyAudioBooksDownloadsLockUnlockInterruptionFunctionality.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>104</td>
+<td>com.viacom.smoketestscripts.VerifyAudioBooksDownloadsLockUnlockInterruptionFunctionality@4f6f416f</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyAudioBooksDownloadsKillAppInterruptionFunctionality.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyAudioBooksDownloadsKillAppInterruptionFunctionality<br>Parameters: {Password=vinoth@123, Runmode=Y, Email=audiodownloads@gmail.com}</td>
+<td><div><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceAudioDownloadQuality(DownloadsPageV2.java:251)
+	at com.viacom.smoketestscripts.VerifyAudioBooksDownloadsKillAppInterruptionFunctionality.loginTest(VerifyAudioBooksDownloadsKillAppInterruptionFunctionality.java:59)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2074079629", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2074079629'><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceAudioDownloadQuality(DownloadsPageV2.java:251)
+	at com.viacom.smoketestscripts.VerifyAudioBooksDownloadsKillAppInterruptionFunctionality.loginTest(VerifyAudioBooksDownloadsKillAppInterruptionFunctionality.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>104</td>
+<td>com.viacom.smoketestscripts.VerifyAudioBooksDownloadsKillAppInterruptionFunctionality@3b8f0a79</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyAudioBooksDownloadsSwitchAppInterruptionFunctionality.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyAudioBooksDownloadsSwitchAppInterruptionFunctionality<br>Parameters: {Password=vinoth@123, Runmode=Y, Email=audiodownloads@gmail.com}</td>
+<td><div><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceAudioDownloadQuality(DownloadsPageV2.java:251)
+	at com.viacom.smoketestscripts.VerifyAudioBooksDownloadsSwitchAppInterruptionFunctionality.loginTest(VerifyAudioBooksDownloadsSwitchAppInterruptionFunctionality.java:60)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1835077029", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1835077029'><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceAudioDownloadQuality(DownloadsPageV2.java:251)
+	at com.viacom.smoketestscripts.VerifyAudioBooksDownloadsSwitchAppInterruptionFunctionality.loginTest(VerifyAudioBooksDownloadsSwitchAppInterruptionFunctionality.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>103</td>
+<td>com.viacom.smoketestscripts.VerifyAudioBooksDownloadsSwitchAppInterruptionFunctionality@71e693fa</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyDownloadedAudioFunctionalityTest.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyDownloadedAudioFunctionalityTest<br>Parameters: {Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}</td>
+<td><div><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceAudioDownloadQuality(DownloadsPageV2.java:251)
+	at com.viacom.smoketestscripts.VerifyDownloadedAudioFunctionalityTest.loginTest(VerifyDownloadedAudioFunctionalityTest.java:64)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1974057570", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1974057570'><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceAudioDownloadQuality(DownloadsPageV2.java:251)
+	at com.viacom.smoketestscripts.VerifyDownloadedAudioFunctionalityTest.loginTest(VerifyDownloadedAudioFunctionalityTest.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>123</td>
+<td>com.viacom.smoketestscripts.VerifyDownloadedAudioFunctionalityTest@48793bef</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyDownloadedAudioPlaybackTest.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyDownloadedAudioPlaybackTest<br>Parameters: {Password=vinoth@123, Runmode=Y, Email=booksdownloads@gmail.com}</td>
+<td><div><pre>java.lang.AssertionError: Failed to find Downloads Tab in My Stuff
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyDownloadedAudioPlaybackTest.loginTest(VerifyDownloadedAudioPlaybackTest.java:73)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2082556716", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2082556716'><pre>java.lang.AssertionError: Failed to find Downloads Tab in My Stuff
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyDownloadedAudioPlaybackTest.loginTest(VerifyDownloadedAudioPlaybackTest.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>353</td>
+<td>com.viacom.smoketestscripts.VerifyDownloadedAudioPlaybackTest@7d286fb6</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyBookReaderFunctionalityTest.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyBookReaderFunctionalityTest<br>Parameters: {Password=vinoth@123, Runmode=Y, Email=ifocusauto@gmail.com}</td>
+<td><div><pre>java.lang.AssertionError: Not able to click on read tab
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyBookReaderFunctionalityTest.loginTest(VerifyBookReaderFunctionalityTest.java:99)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace466196710", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace466196710'><pre>java.lang.AssertionError: Not able to click on read tab
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.smoketestscripts.VerifyBookReaderFunctionalityTest.loginTest(VerifyBookReaderFunctionalityTest.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>168</td>
+<td>com.viacom.smoketestscripts.VerifyBookReaderFunctionalityTest@3eb77ea8</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyEbookDownloadsProgressFunctionalityTest.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyEbookDownloadsProgressFunctionalityTest<br>Parameters: {Password=vinoth@123, Runmode=Y, Email=booksdownloads@gmail.com}</td>
+<td><div><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceDownloadQuality(DownloadsPageV2.java:332)
+	at com.viacom.smoketestscripts.VerifyEbookDownloadsProgressFunctionalityTest.loginTest(VerifyEbookDownloadsProgressFunctionalityTest.java:68)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1516499112", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1516499112'><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceDownloadQuality(DownloadsPageV2.java:332)
+	at com.viacom.smoketestscripts.VerifyEbookDownloadsProgressFunctionalityTest.loginTest(VerifyEbookDownloadsProgressFunctionalityTest.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>134</td>
+<td>com.viacom.smoketestscripts.VerifyEbookDownloadsProgressFunctionalityTest@7aaca91a</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyEBooksDownloadsInterruptionFunctionality.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyEBooksDownloadsInterruptionFunctionality<br>Parameters: {Password=vinoth@123, Runmode=Y, Email=booksdownloads@gmail.com}</td>
+<td><div><pre>java.lang.AssertionError: Failed to logout
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.logout(HomePageV2.java:1634)
+	at com.viacom.smoketestscripts.VerifyEBooksDownloadsInterruptionFunctionality.loginTest(VerifyEBooksDownloadsInterruptionFunctionality.java:61)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace84739396", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace84739396'><pre>java.lang.AssertionError: Failed to logout
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.logout(HomePageV2.java:1634)
+	at com.viacom.smoketestscripts.VerifyEBooksDownloadsInterruptionFunctionality.loginTest(VerifyEBooksDownloadsInterruptionFunctionality.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>194</td>
+<td>com.viacom.smoketestscripts.VerifyEBooksDownloadsInterruptionFunctionality@44c73c26</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyEBooksDownloadsLockUnlockInterruptionFunctionality.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyEBooksDownloadsLockUnlockInterruptionFunctionality<br>Parameters: {Password=vinoth@123, Runmode=Y, Email=booksdownloads@gmail.com}</td>
+<td><div><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceDownloadQuality(DownloadsPageV2.java:332)
+	at com.viacom.smoketestscripts.VerifyEBooksDownloadsLockUnlockInterruptionFunctionality.loginTest(VerifyEBooksDownloadsLockUnlockInterruptionFunctionality.java:61)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1993756865", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1993756865'><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceDownloadQuality(DownloadsPageV2.java:332)
+	at com.viacom.smoketestscripts.VerifyEBooksDownloadsLockUnlockInterruptionFunctionality.loginTest(VerifyEBooksDownloadsLockUnlockInterruptionFunctionality.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>105</td>
+<td>com.viacom.smoketestscripts.VerifyEBooksDownloadsLockUnlockInterruptionFunctionality@41005828</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyEBooksDownloadsKillAppInterruptionFunctionality.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyEBooksDownloadsKillAppInterruptionFunctionality<br>Parameters: {Password=vinoth@123, Runmode=Y, Email=booksdownloads@gmail.com}</td>
+<td><div><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceDownloadQuality(DownloadsPageV2.java:332)
+	at com.viacom.smoketestscripts.VerifyEBooksDownloadsKillAppInterruptionFunctionality.loginTest(VerifyEBooksDownloadsKillAppInterruptionFunctionality.java:60)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1284595142", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1284595142'><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceDownloadQuality(DownloadsPageV2.java:332)
+	at com.viacom.smoketestscripts.VerifyEBooksDownloadsKillAppInterruptionFunctionality.loginTest(VerifyEBooksDownloadsKillAppInterruptionFunctionality.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>104</td>
+<td>com.viacom.smoketestscripts.VerifyEBooksDownloadsKillAppInterruptionFunctionality@60b4beb4</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyEBooksDownloadsSwitchAppInterruptionFunctionality.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyEBooksDownloadsSwitchAppInterruptionFunctionality<br>Parameters: {Password=vinoth@123, Runmode=Y, Email=booksdownloads@gmail.com}</td>
+<td><div><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceDownloadQuality(DownloadsPageV2.java:332)
+	at com.viacom.smoketestscripts.VerifyEBooksDownloadsSwitchAppInterruptionFunctionality.loginTest(VerifyEBooksDownloadsSwitchAppInterruptionFunctionality.java:61)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1676738619", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1676738619'><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceDownloadQuality(DownloadsPageV2.java:332)
+	at com.viacom.smoketestscripts.VerifyEBooksDownloadsSwitchAppInterruptionFunctionality.loginTest(VerifyEBooksDownloadsSwitchAppInterruptionFunctionality.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>104</td>
+<td>com.viacom.smoketestscripts.VerifyEBooksDownloadsSwitchAppInterruptionFunctionality@7fcf2fc1</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyDownloadedBookFunctionalityTest.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyDownloadedBookFunctionalityTest<br>Parameters: {Password=vinoth@123, Runmode=Y, Email=booksdownloads@gmail.com}</td>
+<td><div><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceDownloadQuality(DownloadsPageV2.java:332)
+	at com.viacom.smoketestscripts.VerifyDownloadedBookFunctionalityTest.loginTest(VerifyDownloadedBookFunctionalityTest.java:96)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1816281797", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1816281797'><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceDownloadQuality(DownloadsPageV2.java:332)
+	at com.viacom.smoketestscripts.VerifyDownloadedBookFunctionalityTest.loginTest(VerifyDownloadedBookFunctionalityTest.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>192</td>
+<td>com.viacom.smoketestscripts.VerifyDownloadedBookFunctionalityTest@2141a12</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyEpisodeDownloadsProgressFunctionalityTest.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyEpisodeDownloadsProgressFunctionalityTest<br>Parameters: {Password=vinoth@123, Runmode=Y, Email=booksdownloads@gmail.com}</td>
+<td><div><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceDownloadQuality(DownloadsPageV2.java:332)
+	at com.viacom.smoketestscripts.VerifyEpisodeDownloadsProgressFunctionalityTest.loginTest(VerifyEpisodeDownloadsProgressFunctionalityTest.java:69)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace190993505", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace190993505'><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceDownloadQuality(DownloadsPageV2.java:332)
+	at com.viacom.smoketestscripts.VerifyEpisodeDownloadsProgressFunctionalityTest.loginTest(VerifyEpisodeDownloadsProgressFunctionalityTest.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>104</td>
+<td>com.viacom.smoketestscripts.VerifyEpisodeDownloadsProgressFunctionalityTest@4196c360</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyEpisodeDownloadsProgressInterruptionFunctionalityTest.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyEpisodeDownloadsProgressInterruptionFunctionalityTest<br>Parameters: {Password=vinoth@123, Runmode=Y, Email=booksdownloads@gmail.com}</td>
+<td><div><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceDownloadQuality(DownloadsPageV2.java:332)
+	at com.viacom.smoketestscripts.VerifyEpisodeDownloadsProgressInterruptionFunctionalityTest.loginTest(VerifyEpisodeDownloadsProgressInterruptionFunctionalityTest.java:73)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2129109539", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2129109539'><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceDownloadQuality(DownloadsPageV2.java:332)
+	at com.viacom.smoketestscripts.VerifyEpisodeDownloadsProgressInterruptionFunctionalityTest.loginTest(VerifyEpisodeDownloadsProgressInterruptionFunctionalityTest.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>114</td>
+<td>com.viacom.smoketestscripts.VerifyEpisodeDownloadsProgressInterruptionFunctionalityTest@41294f8</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyLockUnlockInterruptionDuringDownloadFunctionalityTest.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyLockUnlockInterruptionDuringDownloadFunctionalityTest<br>Parameters: {Password=vinoth@123, Runmode=Y, Email=booksdownloads@gmail.com}</td>
+<td><div><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceDownloadQuality(DownloadsPageV2.java:332)
+	at com.viacom.smoketestscripts.VerifyLockUnlockInterruptionDuringDownloadFunctionalityTest.loginTest(VerifyLockUnlockInterruptionDuringDownloadFunctionalityTest.java:70)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace797432288", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace797432288'><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceDownloadQuality(DownloadsPageV2.java:332)
+	at com.viacom.smoketestscripts.VerifyLockUnlockInterruptionDuringDownloadFunctionalityTest.loginTest(VerifyLockUnlockInterruptionDuringDownloadFunctionalityTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>103</td>
+<td>com.viacom.smoketestscripts.VerifyLockUnlockInterruptionDuringDownloadFunctionalityTest@225129c</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyKillLaunchInterruptionDuringEpisodeDownloadFunctionalityTest.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifyKillLaunchInterruptionDuringEpisodeDownloadFunctionalityTest<br>Parameters: {Password=vinoth@123, Runmode=Y, Email=booksdownloads@gmail.com}</td>
+<td><div><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceDownloadQuality(DownloadsPageV2.java:332)
+	at com.viacom.smoketestscripts.VerifyKillLaunchInterruptionDuringEpisodeDownloadFunctionalityTest.loginTest(VerifyKillLaunchInterruptionDuringEpisodeDownloadFunctionalityTest.java:71)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace903438945", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace903438945'><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceDownloadQuality(DownloadsPageV2.java:332)
+	at com.viacom.smoketestscripts.VerifyKillLaunchInterruptionDuringEpisodeDownloadFunctionalityTest.loginTest(VerifyKillLaunchInterruptionDuringEpisodeDownloadFunctionalityTest.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>105</td>
+<td>com.viacom.smoketestscripts.VerifyKillLaunchInterruptionDuringEpisodeDownloadFunctionalityTest@20435c40</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifySwitchAppInterruptionDuringEpisodeDownloadFunctionality.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.VerifySwitchAppInterruptionDuringEpisodeDownloadFunctionality<br>Parameters: {Password=vinoth@123, Runmode=Y, Email=booksdownloads@gmail.com}</td>
+<td><div><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceDownloadQuality(DownloadsPageV2.java:332)
+	at com.viacom.smoketestscripts.VerifySwitchAppInterruptionDuringEpisodeDownloadFunctionality.loginTest(VerifySwitchAppInterruptionDuringEpisodeDownloadFunctionality.java:62)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace640837116", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace640837116'><pre>java.lang.AssertionError: User Profile icon is not displayed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.DownloadsPageV2.setDeviceDownloadQuality(DownloadsPageV2.java:332)
+	at com.viacom.smoketestscripts.VerifySwitchAppInterruptionDuringEpisodeDownloadFunctionality.loginTest(VerifySwitchAppInterruptionDuringEpisodeDownloadFunctionality.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>104</td>
+<td>com.viacom.smoketestscripts.VerifySwitchAppInterruptionDuringEpisodeDownloadFunctionality@573906eb</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.searchFunctionalityTest.searchFunctionality()'><b>searchFunctionality</b><br>Test class: com.viacom.smoketestscripts.searchFunctionalityTest<br>Parameters: {Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}</td>
+<td><div><pre>java.lang.AssertionError: Login Failed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.searchFunctionalityTest.searchFunctionality(searchFunctionalityTest.java:89)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace526403822", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace526403822'><pre>java.lang.AssertionError: Login Failed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.searchFunctionalityTest.searchFunctionality(searchFunctionalityTest.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>301</td>
+<td>com.viacom.smoketestscripts.searchFunctionalityTest@4278284b</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifySearchResultsTest.searchResults()'><b>searchResults</b><br>Test class: com.viacom.smoketestscripts.VerifySearchResultsTest<br>Parameters: {Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}</td>
+<td><div><pre>java.lang.AssertionError: Login Failed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.VerifySearchResultsTest.searchResults(VerifySearchResultsTest.java:71)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace6230996", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace6230996'><pre>java.lang.AssertionError: Login Failed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.VerifySearchResultsTest.searchResults(VerifySearchResultsTest.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>271</td>
+<td>com.viacom.smoketestscripts.VerifySearchResultsTest@53251a66</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyCardsMetaDataFavouritesSectionPage.verifyCardsMetaDataFavouritesSectionPage()'><b>verifyCardsMetaDataFavouritesSectionPage</b><br>Test class: com.viacom.smoketestscripts.VerifyCardsMetaDataFavouritesSectionPage<br>Parameters: {Password=vinoth@123, Runmode=Y, Email=ifocusauto@gmail.com}</td>
+<td><div><pre>java.lang.AssertionError: Login Failed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.VerifyCardsMetaDataFavouritesSectionPage.verifyCardsMetaDataFavouritesSectionPage(VerifyCardsMetaDataFavouritesSectionPage.java:89)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace836494265", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace836494265'><pre>java.lang.AssertionError: Login Failed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.VerifyCardsMetaDataFavouritesSectionPage.verifyCardsMetaDataFavouritesSectionPage(VerifyCardsMetaDataFavouritesSectionPage.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>283</td>
+<td>com.viacom.smoketestscripts.VerifyCardsMetaDataFavouritesSectionPage@176b75f7</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.VerifyChannelInfCharactersTab.verifyChannelInfCharactersTab()'><b>verifyChannelInfCharactersTab</b><br>Test class: com.viacom.smoketestscripts.VerifyChannelInfCharactersTab<br>Parameters: {Password=vinoth@123, Runmode=Y, Email=booksdownloads@gmail.com}</td>
+<td><div><pre>java.lang.AssertionError: Login Failed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.VerifyChannelInfCharactersTab.verifyChannelInfCharactersTab(VerifyChannelInfCharactersTab.java:89)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace150373197", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace150373197'><pre>java.lang.AssertionError: Login Failed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.VerifyChannelInfCharactersTab.verifyChannelInfCharactersTab(VerifyChannelInfCharactersTab.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>317</td>
+<td>com.viacom.smoketestscripts.VerifyChannelInfCharactersTab@6853425f</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.Verify_Watch_ChannelsTab_Section.verifyWatchChannelsTabSection()'><b>verifyWatchChannelsTabSection</b><br>Test class: com.viacom.smoketestscripts.Verify_Watch_ChannelsTab_Section<br>Parameters: {Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}</td>
+<td><div><pre>java.lang.AssertionError: Login Failed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.Verify_Watch_ChannelsTab_Section.verifyWatchChannelsTabSection(Verify_Watch_ChannelsTab_Section.java:66)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace461557542", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace461557542'><pre>java.lang.AssertionError: Login Failed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.Verify_Watch_ChannelsTab_Section.verifyWatchChannelsTabSection(Verify_Watch_ChannelsTab_Section.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>271</td>
+<td>com.viacom.smoketestscripts.Verify_Watch_ChannelsTab_Section@75d2da2d</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.vootkids.videoPlayback()'><b>videoPlayback</b><br>Test class: com.viacom.smoketestscripts.vootkids<br>Parameters: {Password=rose, Runmode=Y, Email=dayanand.s@ifocussystec.in}</td>
+<td><div><pre>java.lang.AssertionError: Login Failed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.vootkids.videoPlayback(vootkids.java:79)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1902121954", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1902121954'><pre>java.lang.AssertionError: Login Failed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.vootkids.videoPlayback(vootkids.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>318</td>
+<td>com.viacom.smoketestscripts.vootkids@18e36d14</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.Verify_Watch_Channel_Info.videoPlayback()'><b>videoPlayback</b><br>Test class: com.viacom.smoketestscripts.Verify_Watch_Channel_Info<br>Parameters: {Password=daya123, Runmode=Y, Email=daya123@daya.in
+
+}</td>
+<td><div><pre>java.lang.AssertionError: Login Failed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.Verify_Watch_Channel_Info.videoPlayback(Verify_Watch_Channel_Info.java:68)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace679900905", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace679900905'><pre>java.lang.AssertionError: Login Failed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.Verify_Watch_Channel_Info.videoPlayback(Verify_Watch_Channel_Info.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>261</td>
+<td>com.viacom.smoketestscripts.Verify_Watch_Channel_Info@5082d622</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.Just_foryou.videoPlayback()'><b>videoPlayback</b><br>Test class: com.viacom.smoketestscripts.Just_foryou<br>Parameters: {Password=rose, Runmode=Y, Email=dayanand.s@ifocussystec.in}</td>
+<td><div><pre>java.lang.AssertionError: Login Failed
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.Just_foryou.videoPlayback(Just_foryou.java:91)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1813076334", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1813076334'><pre>java.lang.AssertionError: Login Failed
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1342)
+	at com.viacom.smoketestscripts.Just_foryou.videoPlayback(Just_foryou.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>348</td>
+<td>com.viacom.smoketestscripts.Just_foryou@13d4992d</td></tr>
+</table><p>
+</body>
+</html>

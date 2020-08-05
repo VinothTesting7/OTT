@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite (0)]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.viacom.smoketestscripts.Just_foryou">
+        <methods>
+          <include name="suite"/>
+          <include name="videoPlayback" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.Just_foryou -->
+      <class name="com.viacom.smoketestscripts.VerifyAudioBooksDownloadsLockUnlockInterruptionFunctionality">
+        <methods>
+          <include name="suite"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyAudioBooksDownloadsLockUnlockInterruptionFunctionality -->
+      <class name="com.viacom.smoketestscripts.VerifyDownloadedBookFunctionalityTest">
+        <methods>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="suite"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyDownloadedBookFunctionalityTest -->
+      <class name="com.viacom.smoketestscripts.AudioPlayerUparrowfunctionalityTest">
+        <methods>
+          <include name="suite"/>
+          <include name="inlineAudioFunction" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.AudioPlayerUparrowfunctionalityTest -->
+      <class name="com.viacom.smoketestscripts.VerifyAudioDownloadsProgressFunctionalityTest">
+        <methods>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="suite"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyAudioDownloadsProgressFunctionalityTest -->
+      <class name="com.viacom.smoketestscripts.AudioBookDetailUITest">
+        <methods>
+          <include name="suite"/>
+          <include name="audioBookUI" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.AudioBookDetailUITest -->
+      <class name="com.viacom.smoketestscripts.VerifyEBooksDownloadsKillAppInterruptionFunctionality">
+        <methods>
+          <include name="suite"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyEBooksDownloadsKillAppInterruptionFunctionality -->
+      <class name="com.viacom.smoketestscripts.Verify_Watch_Channel_Info">
+        <methods>
+          <include name="suite"/>
+          <include name="setup"/>
+          <include name="videoPlayback" invocation-numbers="0"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.Verify_Watch_Channel_Info -->
+      <class name="com.viacom.smoketestscripts.VerifyChannelInfCharactersTab">
+        <methods>
+          <include name="verifyChannelInfCharactersTab" invocation-numbers="0"/>
+          <include name="suite"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyChannelInfCharactersTab -->
+      <class name="com.viacom.smoketestscripts.VerifySearchResultsTest">
+        <methods>
+          <include name="suite"/>
+          <include name="searchResults" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifySearchResultsTest -->
+      <class name="com.viacom.smoketestscripts.VerifyEditProfileFavourites">
+        <methods>
+          <include name="suite"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="VerifyCharactersInCharactersTray" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyEditProfileFavourites -->
+      <class name="com.viacom.smoketestscripts.DownloadCancelFeatureTest">
+        <methods>
+          <include name="DownloadCancelFeature" invocation-numbers="0"/>
+          <include name="suite"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.DownloadCancelFeatureTest -->
+      <class name="com.viacom.smoketestscripts.VerifyCoachCardsFunctionality">
+        <methods>
+          <include name="suite"/>
+          <include name="setup"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyCoachCardsFunctionality -->
+      <class name="com.viacom.smoketestscripts.VerifySwitchAppInterruptionDuringEpisodeDownloadFunctionality">
+        <methods>
+          <include name="suite"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+          <include name="loginTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifySwitchAppInterruptionDuringEpisodeDownloadFunctionality -->
+      <class name="com.viacom.smoketestscripts.VerifyDownloadsCountunderParentZoneTest">
+        <methods>
+          <include name="suite"/>
+          <include name="VerifyDownloadsCountunderParentZone" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyDownloadsCountunderParentZoneTest -->
+      <class name="com.viacom.smoketestscripts.VerifyEpisodeDownloadsProgressInterruptionFunctionalityTest">
+        <methods>
+          <include name="suite"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyEpisodeDownloadsProgressInterruptionFunctionalityTest -->
+      <class name="com.viacom.smoketestscripts.audioPlayerFunctionalityTest">
+        <methods>
+          <include name="suite"/>
+          <include name="audioPlayerFunctionality" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.audioPlayerFunctionalityTest -->
+      <class name="com.viacom.smoketestscripts.VerifyEpisodesUIFunctionalityTest">
+        <methods>
+          <include name="suite"/>
+          <include name="EpisodesUIFunctionality" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyEpisodesUIFunctionalityTest -->
+      <class name="com.viacom.smoketestscripts.searchFunctionalityTest">
+        <methods>
+          <include name="suite"/>
+          <include name="searchFunctionality" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.searchFunctionalityTest -->
+      <class name="com.viacom.smoketestscripts.VerifyShowDetailsPageEditorialSectionUITest">
+        <methods>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="suite"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyShowDetailsPageEditorialSectionUITest -->
+      <class name="com.viacom.smoketestscripts.VerifyAudioBooksDownloadsSwitchAppInterruptionFunctionality">
+        <methods>
+          <include name="suite"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyAudioBooksDownloadsSwitchAppInterruptionFunctionality -->
+      <class name="com.viacom.smoketestscripts.VerifyBookDetailsPageFunctionalityTest">
+        <methods>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="suite"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyBookDetailsPageFunctionalityTest -->
+      <class name="com.viacom.smoketestscripts.VerifyDownloadedAudioFunctionalityTest">
+        <methods>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="suite"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyDownloadedAudioFunctionalityTest -->
+      <class name="com.viacom.smoketestscripts.VerifyVodPlayerFunctionalityTest">
+        <methods>
+          <include name="suite"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyVodPlayerFunctionalityTest -->
+      <class name="com.viacom.smoketestscripts.ValidateListenTrays">
+        <methods>
+          <include name="suite"/>
+          <include name="VerifyTraysinListentab" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.ValidateListenTrays -->
+      <class name="com.viacom.smoketestscripts.VerifyEBooksDownloadsLockUnlockInterruptionFunctionality">
+        <methods>
+          <include name="suite"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyEBooksDownloadsLockUnlockInterruptionFunctionality -->
+      <class name="com.viacom.smoketestscripts.VerifyBookReaderFunctionalityTest">
+        <methods>
+          <include name="suite"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyBookReaderFunctionalityTest -->
+      <class name="com.viacom.smoketestscripts.VerifyVodPlayerFavoritesRelatedFunctionality">
+        <methods>
+          <include name="suite"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyVodPlayerFavoritesRelatedFunctionality -->
+      <class name="com.viacom.smoketestscripts.VerifyDownloadEpisodeFunctionalityTest">
+        <methods>
+          <include name="suite"/>
+          <include name="VerifyDownloadEpisodeFunctionality" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyDownloadEpisodeFunctionalityTest -->
+      <class name="com.viacom.smoketestscripts.VerifyCardsMetaDataFavouritesSectionPage">
+        <methods>
+          <include name="suite"/>
+          <include name="verifyCardsMetaDataFavouritesSectionPage" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyCardsMetaDataFavouritesSectionPage -->
+      <class name="com.viacom.smoketestscripts.VerifyEbookDownloadsProgressFunctionalityTest">
+        <methods>
+          <include name="suite"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyEbookDownloadsProgressFunctionalityTest -->
+      <class name="com.viacom.smoketestscripts.VerifyLockUnlockInterruptionDuringDownloadFunctionalityTest">
+        <methods>
+          <include name="suite"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyLockUnlockInterruptionDuringDownloadFunctionalityTest -->
+      <class name="com.viacom.smoketestscripts.VerifyVodPlayerPlaylistUITest">
+        <methods>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="suite"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyVodPlayerPlaylistUITest -->
+      <class name="com.viacom.smoketestscripts.VerifyEBooksDownloadsSwitchAppInterruptionFunctionality">
+        <methods>
+          <include name="suite"/>
+          <include name="setup"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyEBooksDownloadsSwitchAppInterruptionFunctionality -->
+      <class name="com.viacom.smoketestscripts.VerifyVodPlayerPlaylistForFavoritedEpisode">
+        <methods>
+          <include name="suite"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+          <include name="loginTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyVodPlayerPlaylistForFavoritedEpisode -->
+      <class name="com.viacom.smoketestscripts.VerifyAudioBooksDownloadsKillAppInterruptionFunctionality">
+        <methods>
+          <include name="suite"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyAudioBooksDownloadsKillAppInterruptionFunctionality -->
+      <class name="com.viacom.smoketestscripts.VerifyEBooksDownloadsInterruptionFunctionality">
+        <methods>
+          <include name="suite"/>
+          <include name="setup"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyEBooksDownloadsInterruptionFunctionality -->
+      <class name="com.viacom.smoketestscripts.VerifyEpisodeDownloadsProgressFunctionalityTest">
+        <methods>
+          <include name="suite"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyEpisodeDownloadsProgressFunctionalityTest -->
+      <class name="com.viacom.smoketestscripts.VerifyAudioBooksDownloadsFunctionalityTest">
+        <methods>
+          <include name="suite"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyAudioBooksDownloadsFunctionalityTest -->
+      <class name="com.viacom.smoketestscripts.SearchFunctionalityTabHilightingTest">
+        <methods>
+          <include name="suite"/>
+          <include name="SearchFunctionalityTabHilighting" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.SearchFunctionalityTabHilightingTest -->
+      <class name="com.viacom.smoketestscripts.VerifyDownloadedAudioPlaybackTest">
+        <methods>
+          <include name="suite"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyDownloadedAudioPlaybackTest -->
+      <class name="com.viacom.smoketestscripts.VerifyAudioBooksDownloadsInterruptionFunctionality">
+        <methods>
+          <include name="suite"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyAudioBooksDownloadsInterruptionFunctionality -->
+      <class name="com.viacom.smoketestscripts.VerifyKillLaunchInterruptionDuringEpisodeDownloadFunctionalityTest">
+        <methods>
+          <include name="suite"/>
+          <include name="setup"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyKillLaunchInterruptionDuringEpisodeDownloadFunctionalityTest -->
+      <class name="com.viacom.smoketestscripts.VerifyShowDetailsPageFunctionalityTest">
+        <methods>
+          <include name="suite"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyShowDetailsPageFunctionalityTest -->
+      <class name="com.viacom.smoketestscripts.Verify_Watch_ChannelsTab_Section">
+        <methods>
+          <include name="suite"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="verifyWatchChannelsTabSection" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.Verify_Watch_ChannelsTab_Section -->
+      <class name="com.viacom.smoketestscripts.vootkids">
+        <methods>
+          <include name="suite"/>
+          <include name="videoPlayback" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.vootkids -->
+      <class name="com.viacom.smoketestscripts.VerifyForwardRewindButtonFunctionalityTest">
+        <methods>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="suite"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyForwardRewindButtonFunctionalityTest -->
+      <class name="com.viacom.smoketestscripts.VerifyEBooksDownloadsFunctionalityTest">
+        <methods>
+          <include name="downloadTest" invocation-numbers="0"/>
+          <include name="suite"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.viacom.smoketestscripts.VerifyEBooksDownloadsFunctionalityTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite (0)] -->

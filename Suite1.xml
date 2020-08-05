@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+    <!-- Karthik suite -->
+    	<!-- <class name="com.viacom.settings.ForgotPinTest"/> -->
+    	<!-- <class name="com.viacom.uinavigation.VerifyEpisodesUIFunctionalityTest"/> -->
+    	
+		<class name="com.viacom.search.VerifySearchResultsTest"/> 
+	    <class name="com.viacom.downloads.VerifyDownloadEpisodeFunctionalityTest"/> 	<!-- tablet done -->
+		<class name="com.viacom.search.SearchFunctionalityTabHilightingTest"/>          <!-- tablet done -->
+		<class name="com.viacom.uinavigation.AudioBookDetailUITest"/>
+		<class name="com.viacom.audioplayer.AudioPlayerUparrowfunctionalityTest"/>
+		<class name="com.viacom.audioplayer.AudioPlayerLockNotificationTest"/>
+		<class name="com.viacom.audioplayer.AudioForwardRewindFunctionalityTest"/>
+		<class name="com.viacom.downloads.DownloadFunctionalityTest"/> 
+		<class name="com.viacom.downloads.EbooksPreviewandDownloadFunctionalityTest"/>
+		<class name="com.viacom.smoketestscripts.Just_foryou"/>
+		<class name="com.viacom.downloads.DownloadedUparrowFunctionalityTest"/>
+		<class name="com.viacom.search.searchFunctionalityTest"/>
+		<class name="com.viacom.downloads.VerifyAudioDownloadesMyStuffTabTest"/>
+		<class name="com.viacom.uinavigation.vootkids"/>
+		<class name="com.viacom.downloads.VerifyUpArrowButtonforSingleDownloadedContentTest"/>
+		<class name="com.viacom.downloads.VerifySeeAllDownladsTest"/>
+		<class name="com.viacom.vodplayer.VerifyEpisodePlaybackInterruptionsTest"/>
+		<class name="com.viacom.uinavigation.PaginationVerificationTest"/>
+		<class name="com.viacom.smoketestscripts.LoginFunctionalityTest"/>
+		<class name="com.viacom.audioplayer.audioPlayerFunctionalityTest"/> 
+		<class name="com.viacom.downloads.Downloads_Sorting_Profiles_Test_P1"/> 
+		<class name="com.viacom.lastviewed.EbooksLastViewedTest_P1"/> 
+		<class name="com.viacom.lastviewed.LastViewedEpisodeandAudioTest_P2"/> 
+		
+                       
+        <!-- commented classes
+        
+        <class name="com.viacom.registration.SignupFunctionalityTest"/> 
+        <class name="com.viacom.registration.signupFunctionalityCreateProfilePageTest"/> 
+        <class name="com.viacom.downloads.AudioDownloadedOffLineTest"/> 
+        <class name="com.viacom.search.RecentSearchFunctionalityTest"/> 
+        <class name="com.viacom.profile.MultipleProfileFunctionalityTest"/>
+        <class name="com.viacom.downloads.DownloadCancelFeatureTest"/> 
+        
+        -->
+          
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

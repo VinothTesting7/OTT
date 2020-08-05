@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test1">
+    <classes>
+        <!-- Suresh suite -->
+<!-- 	 <class name="com.viacom.settings.VerifySettingsAccountMobileNum"/> 
+     <class name="com.viacom.settings.VerifySettingsPinPage"/>    
+     <class name="com.viacom.settings.VrifySettingsAccountScreen"/>
+     <class name="com.viacom.channels.Verify_Watch_OnNow_Channels_List"/>  
+	 <class name="com.viacom.settings.ResetParentAccountPinFunctionality"/>
+     <class name="com.viacom.settings.ResetPasswordFunctionalityTest"/>
+	 <class name="com.viacom.channels.Verify_Watch_On_Now_Section"/>
+     <class name="com.viacom.settings.SettingsMoblieNumberValidation"/>
+     <class name="com.viacom.settings.VerifyForGotPINFunctionality"/>  
+     <class name="com.viacom.settings.ForGotPassword"/>
+     <class name="com.viacom.settings.ResetPasswordFunctionalityValidation"/>
+     <class name="com.viacom.settings.VerifySettingsShareFunctionalityTest"/> -->
+		
+ 	<class name="com.viacom.settings.SettingsHelpAndSupportFeature_P1"/>
+	<class name="com.viacom.settings.MovieCardIntegration_P1"/>
+	<class name="com.viacom.settings.SignUpPageUI_P1"/>
+	<class name="com.viacom.settings.SettingsHelpAndSupportFeature_P2"/>
+	<class name="com.viacom.settings.SettingsMovieDownloads_P2"/>	
+	<class name="com.viacom.settings.MovieCardIntegration_P2"/>
+		<class name="com.viacom.welcomepage.SignUpPageUi_P3"/>
+	<class name="com.viacom.settings.SettingsFeaturesUI_P3"/>
+	<class name="com.viacom.settings.SettingsDeviceCellularFunctionality"/> 
+    <class name="com.viacom.favourites.VerifyEditProfileFavourites"/>
+	<class name="com.viacom.settings.VerifySettingsDeviceScreen"/> 
+	<class name="com.viacom.settings.VerifySettingsDeviceScreen_1"/> 
+	<class name="com.viacom.uinavigation.VerifyChannelInfCharactersTab"/>  
+    <class name="com.viacom.settings.SettingsParentZonePage"/>
+	<class name="com.viacom.settings.SettingsDeviceCellularFunctionality"/>
+	<class name="com.viacom.settings.SettingsDeviceFunctionalityTest"/>
+	<class name="com.viacom.profile.EditProfileBuddyFunctionality"/>
+    <class name="com.viacom.settings.VerifySettingsRateUsFeature"/> 
+    <class name="com.viacom.settings.SettingsParentZonePageFunctionality_1"/> 
+    <class name="com.viacom.favourites.VerifyCardsMetaDataFavouritesSectionPage"/>   
+  	<class name="com.viacom.settings.VerifySettingsProfilesScreen"/> 
+	<class name="com.viacom.profile.VerifyDeleteProfileFunctionality"/>
+	<class name="com.viacom.favourites.VerifyFavouritesEditPage"/>	
+	<class name="com.viacom.audioplayer.AudioPlayerNotificationValidation"/>
+	<class name="com.viacom.lastviewed.LastViewedTrayValidation"/>
+	<class name="com.viacom.lastviewed.LastViewedMultiContentvalidation"/>
+	<class name="com.viacom.lastviewed.LastViewedTrayAudioFunctionality"/>
+	<class name="com.viacom.lastviewed.LastViewedTrayContentStreamQualityValidation"/>
+	<class name="com.viacom.lastviewed.ReadLastviewedWatchedEbookCardPlayback"/>
+	
+		<class name="com.viacom.movies.MoviePlayerForwardRewindButtonFunctionalityTest_P1"/>
+	    <class name="com.viacom.movies.MoviePlayernetWorkInterruption_P1"/>
+	    <class name="com.viacom.movies.MoviePlayernetWorkInterruption_P2"/>
+	     <class name="com.viacom.movies.MoviePlayerUpArrowInterruption_P2"/>
+	    <class name="com.viacom.movies.MoviesCardNavigation_P1"/>
+	    <class name="com.viacom.movies.VerifyMoviePlayerUITest_P2"/>
+	    <class name="com.viacom.movies.VerifyMovieUpNextOverlayFunctionalityTest_P2"/>
+	    
+	    <class name="com.viacom.uinavigation.VerifyNavigation_P2"/>
+	    <class name="com.viacom.downloads.DownloadsValidation_P1"/>
+	    
+	    <class name="com.viacom.settings.DeviceClearCacheFunctionality_P1"/>
+	    <class name="com.viacom.settings.DeviceClearCacheFunctionality_P2"/>
+	  
+	      <class name="com.viacom.ebook.VerifyYouMightAlsoLikeFunctionality_P1"/>
+	      <class name="com.viacom.ebook.VerifyYouMightAlsoLikeFunctionality_P2"/>
+	      
+	      
+	      <class name="com.viacom.lastviewed.VerifyLastViewedTrayAudioCard_P2"/>
+	
+	
+    </classes>
+  </test>
+  
+</suite> 

@@ -1,0 +1,2314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="2" failed="35" ignored="80" total="121" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="5694016" started-at="2019-08-08T05:18:03Z" finished-at="2019-08-08T06:52:57Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="5694016" started-at="2019-08-08T05:18:03Z" finished-at="2019-08-08T06:52:57Z">
+      <class name="com.viacom.parentzone.VerifyStatsInParentZone">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.parentzone.VerifyStatsInParentZone@57db2b13]" name="setup" is-config="true" duration-ms="4576" started-at="2019-08-08T05:35:07Z" finished-at="2019-08-08T05:35:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="verifyStatsInParentZone(java.util.Hashtable)[pri:0, instance:com.viacom.parentzone.VerifyStatsInParentZone@57db2b13]" name="verifyStatsInParentZone" duration-ms="132167" started-at="2019-08-08T05:35:12Z" data-provider="getData" finished-at="2019-08-08T05:37:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.parentzone.VerifyStatsInParentZone.verifyStatsInParentZone(VerifyStatsInParentZone.java:70)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStatsInParentZone -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.parentzone.VerifyStatsInParentZone@57db2b13]" name="tearDown" is-config="true" duration-ms="1873" started-at="2019-08-08T05:37:24Z" finished-at="2019-08-08T05:37:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.parentzone.VerifyStatsInParentZone -->
+      <class name="com.viacom.lastviewed.VerifyLastViewedBooks">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedBooks@69504ae9]" name="setup" is-config="true" duration-ms="4308" started-at="2019-08-08T05:29:35Z" finished-at="2019-08-08T05:29:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyLastViewedBooks(java.util.Hashtable)[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedBooks@69504ae9]" name="VerifyLastViewedBooks" duration-ms="74463" started-at="2019-08-08T05:29:39Z" data-provider="getData" finished-at="2019-08-08T05:30:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failed to click on Tab: Read]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failed to click on Tab: Read
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.tabClick(HomePageV2.java:1415)
+at com.viacom.lastviewed.VerifyLastViewedBooks.VerifyLastViewedBooks(VerifyLastViewedBooks.java:76)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLastViewedBooks -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedBooks@69504ae9]" name="tearDown" is-config="true" duration-ms="1810" started-at="2019-08-08T05:30:53Z" finished-at="2019-08-08T05:30:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.lastviewed.VerifyLastViewedBooks -->
+      <class name="com.viacom.lastviewed.VerifyLastViewedMoviesResume">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedMoviesResume@5340477f]" name="setup" is-config="true" duration-ms="4591" started-at="2019-08-08T05:26:00Z" finished-at="2019-08-08T05:26:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyLastViewedMoviesResume(java.util.Hashtable)[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedMoviesResume@5340477f]" name="VerifyLastViewedMoviesResume" duration-ms="65925" started-at="2019-08-08T05:26:05Z" data-provider="getData" finished-at="2019-08-08T05:27:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8.792396107E9}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failed to click on Tab: Watch]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failed to click on Tab: Watch
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.tabClick(HomePageV2.java:1415)
+at com.viacom.lastviewed.VerifyLastViewedMoviesResume.VerifyLastViewedMoviesResume(VerifyLastViewedMoviesResume.java:101)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLastViewedMoviesResume -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedMoviesResume@5340477f]" name="tearDown" is-config="true" duration-ms="1701" started-at="2019-08-08T05:27:11Z" finished-at="2019-08-08T05:27:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.lastviewed.VerifyLastViewedMoviesResume -->
+      <class name="com.viacom.lastviewed.VerifyLastViewedEpisodesSettings">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedEpisodesSettings@46d59067]" name="setup" is-config="true" duration-ms="3747" started-at="2019-08-08T06:36:33Z" finished-at="2019-08-08T06:36:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyLastViewedEpisodesSettings(java.util.Hashtable)[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedEpisodesSettings@46d59067]" name="VerifyLastViewedEpisodesSettings" duration-ms="156019" started-at="2019-08-08T06:36:37Z" data-provider="getData" finished-at="2019-08-08T06:39:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.lastviewed.VerifyLastViewedEpisodesSettings.VerifyLastViewedEpisodesSettings(VerifyLastViewedEpisodesSettings.java:68)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLastViewedEpisodesSettings -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedEpisodesSettings@46d59067]" name="tearDown" is-config="true" duration-ms="1878" started-at="2019-08-08T06:39:13Z" finished-at="2019-08-08T06:39:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.lastviewed.VerifyLastViewedEpisodesSettings -->
+      <class name="com.viacom.carousal.VerifyCarouselMetadataAndSwipeFeature">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.carousal.VerifyCarouselMetadataAndSwipeFeature@5c86a017]" name="setup" is-config="true" duration-ms="4257" started-at="2019-08-08T05:39:44Z" finished-at="2019-08-08T05:39:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyCarouselMetadataAndSwipeFeature(java.util.Hashtable)[pri:0, instance:com.viacom.carousal.VerifyCarouselMetadataAndSwipeFeature@5c86a017]" name="VerifyCarouselMetadataAndSwipeFeature" duration-ms="132898" started-at="2019-08-08T05:39:49Z" data-provider="getData" finished-at="2019-08-08T05:42:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.carousal.VerifyCarouselMetadataAndSwipeFeature.VerifyCarouselMetadataAndSwipeFeature(VerifyCarouselMetadataAndSwipeFeature.java:72)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCarouselMetadataAndSwipeFeature -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.carousal.VerifyCarouselMetadataAndSwipeFeature@5c86a017]" name="tearDown" is-config="true" duration-ms="1901" started-at="2019-08-08T05:42:01Z" finished-at="2019-08-08T05:42:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.carousal.VerifyCarouselMetadataAndSwipeFeature -->
+      <class name="com.viacom.settings.VerifyDeviceSettingsAfterLogout">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.settings.VerifyDeviceSettingsAfterLogout@1f9e9475]" name="setup" is-config="true" duration-ms="4241" started-at="2019-08-08T06:27:03Z" finished-at="2019-08-08T06:27:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyDeviceSettingsAfterLogout(java.util.Hashtable)[pri:0, instance:com.viacom.settings.VerifyDeviceSettingsAfterLogout@1f9e9475]" name="VerifyDeviceSettingsAfterLogout" duration-ms="167131" started-at="2019-08-08T06:27:07Z" data-provider="getData" finished-at="2019-08-08T06:29:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=bhaskar, Runmode=Y, Email=9741039718}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.settings.VerifyDeviceSettingsAfterLogout.VerifyDeviceSettingsAfterLogout(VerifyDeviceSettingsAfterLogout.java:76)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDeviceSettingsAfterLogout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.settings.VerifyDeviceSettingsAfterLogout@1f9e9475]" name="tearDown" is-config="true" duration-ms="1738" started-at="2019-08-08T06:29:54Z" finished-at="2019-08-08T06:29:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.settings.VerifyDeviceSettingsAfterLogout -->
+      <class name="com.viacom.downloads.VerifyCellularDownloadsOFFState">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.downloads.VerifyCellularDownloadsOFFState@6933b6c6]" name="setup" is-config="true" duration-ms="4604" started-at="2019-08-08T06:07:50Z" finished-at="2019-08-08T06:07:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyCellularDownloadsOFFState(java.util.Hashtable)[pri:0, instance:com.viacom.downloads.VerifyCellularDownloadsOFFState@6933b6c6]" name="VerifyCellularDownloadsOFFState" duration-ms="184279" started-at="2019-08-08T06:07:55Z" data-provider="getData" finished-at="2019-08-08T06:10:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.downloads.VerifyCellularDownloadsOFFState.VerifyCellularDownloadsOFFState(VerifyCellularDownloadsOFFState.java:77)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCellularDownloadsOFFState -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.downloads.VerifyCellularDownloadsOFFState@6933b6c6]" name="tearDown" is-config="true" duration-ms="1955" started-at="2019-08-08T06:10:59Z" finished-at="2019-08-08T06:11:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.downloads.VerifyCellularDownloadsOFFState -->
+      <class name="com.viacom.ebook.VerifyEbookDefaults">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.ebook.VerifyEbookDefaults@7bbc8656]" name="setup" is-config="true" duration-ms="6284" started-at="2019-08-08T06:05:22Z" finished-at="2019-08-08T06:05:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyEbookDefaults(java.util.Hashtable)[pri:0, instance:com.viacom.ebook.VerifyEbookDefaults@7bbc8656]" name="VerifyEbookDefaults" duration-ms="140480" started-at="2019-08-08T06:05:28Z" data-provider="getData" finished-at="2019-08-08T06:07:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.ebook.VerifyEbookDefaults.VerifyEbookDefaults(VerifyEbookDefaults.java:78)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyEbookDefaults -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.ebook.VerifyEbookDefaults@7bbc8656]" name="tearDown" is-config="true" duration-ms="1758" started-at="2019-08-08T06:07:49Z" finished-at="2019-08-08T06:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.ebook.VerifyEbookDefaults -->
+      <class name="com.viacom.lastviewed.VerifyLastViewedBooksSettings">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedBooksSettings@14dd7b39]" name="setup" is-config="true" duration-ms="3727" started-at="2019-08-08T06:41:33Z" finished-at="2019-08-08T06:41:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyLastViewedBooksSettings(java.util.Hashtable)[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedBooksSettings@14dd7b39]" name="VerifyLastViewedBooksSettings" duration-ms="130251" started-at="2019-08-08T06:41:37Z" data-provider="getData" finished-at="2019-08-08T06:43:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.lastviewed.VerifyLastViewedBooksSettings.VerifyLastViewedBooksSettings(VerifyLastViewedBooksSettings.java:67)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLastViewedBooksSettings -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedBooksSettings@14dd7b39]" name="tearDown" is-config="true" duration-ms="1762" started-at="2019-08-08T06:43:47Z" finished-at="2019-08-08T06:43:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.lastviewed.VerifyLastViewedBooksSettings -->
+      <class name="com.viacom.lastviewed.VerifyLastViewedAudioSettings">
+        <test-method status="PASS" signature="suite()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedAudioSettings@446a1e84]" name="suite" is-config="true" duration-ms="15" started-at="2019-08-08T05:18:03Z" finished-at="2019-08-08T05:18:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suite -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedAudioSettings@446a1e84]" name="setup" is-config="true" duration-ms="4082" started-at="2019-08-08T05:18:03Z" finished-at="2019-08-08T05:18:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyLastViewedAudioSettings(java.util.Hashtable)[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedAudioSettings@446a1e84]" name="VerifyLastViewedAudioSettings" duration-ms="232422" started-at="2019-08-08T05:18:07Z" data-provider="getData" finished-at="2019-08-08T05:22:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1524)
+at com.viacom.lastviewed.VerifyLastViewedAudioSettings.VerifyLastViewedAudioSettings(VerifyLastViewedAudioSettings.java:70)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLastViewedAudioSettings -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedAudioSettings@446a1e84]" name="tearDown" is-config="true" duration-ms="2046" started-at="2019-08-08T05:22:00Z" finished-at="2019-08-08T05:22:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedAudioSettings@446a1e84]" name="close" is-config="true" duration-ms="0" started-at="2019-08-08T06:52:57Z" finished-at="2019-08-08T06:52:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.viacom.lastviewed.VerifyLastViewedAudioSettings -->
+      <class name="com.viacom.chromecast.VerifyChromecastMovie">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.chromecast.VerifyChromecastMovie@7139992f]" name="setup" is-config="true" duration-ms="4613" started-at="2019-08-08T05:28:24Z" finished-at="2019-08-08T05:28:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyChromecastMovie(java.util.Hashtable)[pri:0, instance:com.viacom.chromecast.VerifyChromecastMovie@7139992f]" name="VerifyChromecastMovie" duration-ms="64844" started-at="2019-08-08T05:28:28Z" data-provider="getData" finished-at="2019-08-08T05:29:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8.792396107E9}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failed to click on Tab: Watch]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failed to click on Tab: Watch
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.tabClick(HomePageV2.java:1415)
+at com.viacom.chromecast.VerifyChromecastMovie.VerifyChromecastMovie(VerifyChromecastMovie.java:95)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyChromecastMovie -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.chromecast.VerifyChromecastMovie@7139992f]" name="tearDown" is-config="true" duration-ms="1715" started-at="2019-08-08T05:29:33Z" finished-at="2019-08-08T05:29:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.chromecast.VerifyChromecastMovie -->
+      <class name="com.viacom.audioplayer.VerifyAudioPlayerSettings">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.audioplayer.VerifyAudioPlayerSettings@1b919693]" name="setup" is-config="true" duration-ms="4288" started-at="2019-08-08T05:50:17Z" finished-at="2019-08-08T05:50:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyAudioPlayerSettings(java.util.Hashtable)[pri:0, instance:com.viacom.audioplayer.VerifyAudioPlayerSettings@1b919693]" name="VerifyAudioPlayerSettings" duration-ms="131891" started-at="2019-08-08T05:50:21Z" data-provider="getData" finished-at="2019-08-08T05:52:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=bhaskar, Runmode=Y, Email=9741039718}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.audioplayer.VerifyAudioPlayerSettings.VerifyAudioPlayerSettings(VerifyAudioPlayerSettings.java:55)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAudioPlayerSettings -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.audioplayer.VerifyAudioPlayerSettings@1b919693]" name="tearDown" is-config="true" duration-ms="2701" started-at="2019-08-08T05:52:33Z" finished-at="2019-08-08T05:52:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.audioplayer.VerifyAudioPlayerSettings -->
+      <class name="com.viacom.vodplayer.VerifyEpisodesTray">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.vodplayer.VerifyEpisodesTray@5276d6ee]" name="setup" is-config="true" duration-ms="4614" started-at="2019-08-08T05:43:45Z" finished-at="2019-08-08T05:43:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyEpisodesTray(java.util.Hashtable)[pri:0, instance:com.viacom.vodplayer.VerifyEpisodesTray@5276d6ee]" name="VerifyEpisodesTray" duration-ms="74925" started-at="2019-08-08T05:43:49Z" data-provider="getData" finished-at="2019-08-08T05:45:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failed to click on Tab: Watch]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failed to click on Tab: Watch
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.tabClick(HomePageV2.java:1415)
+at com.viacom.vodplayer.VerifyEpisodesTray.VerifyEpisodesTray(VerifyEpisodesTray.java:109)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyEpisodesTray -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.vodplayer.VerifyEpisodesTray@5276d6ee]" name="tearDown" is-config="true" duration-ms="1882" started-at="2019-08-08T05:45:04Z" finished-at="2019-08-08T05:45:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.vodplayer.VerifyEpisodesTray -->
+      <class name="com.viacom.lastviewed.VerifyLastViewedAudioResume">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedAudioResume@2254127a]" name="setup" is-config="true" duration-ms="3782" started-at="2019-08-08T06:50:41Z" finished-at="2019-08-08T06:50:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyLastViewedAudioResume(java.util.Hashtable)[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedAudioResume@2254127a]" name="VerifyLastViewedAudioResume" duration-ms="131144" started-at="2019-08-08T06:50:44Z" data-provider="getData" finished-at="2019-08-08T06:52:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.lastviewed.VerifyLastViewedAudioResume.VerifyLastViewedAudioResume(VerifyLastViewedAudioResume.java:65)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLastViewedAudioResume -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedAudioResume@2254127a]" name="tearDown" is-config="true" duration-ms="1764" started-at="2019-08-08T06:52:56Z" finished-at="2019-08-08T06:52:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.lastviewed.VerifyLastViewedAudioResume -->
+      <class name="com.viacom.lastviewed.VerifyLastViewedBooksOrder">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedBooksOrder@2d0399f4]" name="setup" is-config="true" duration-ms="4598" started-at="2019-08-08T06:39:15Z" finished-at="2019-08-08T06:39:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyLastViewedBooksOrder(java.util.Hashtable)[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedBooksOrder@2d0399f4]" name="VerifyLastViewedBooksOrder" duration-ms="131644" started-at="2019-08-08T06:39:20Z" data-provider="getData" finished-at="2019-08-08T06:41:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.lastviewed.VerifyLastViewedBooksOrder.VerifyLastViewedBooksOrder(VerifyLastViewedBooksOrder.java:85)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLastViewedBooksOrder -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedBooksOrder@2d0399f4]" name="tearDown" is-config="true" duration-ms="1801" started-at="2019-08-08T06:41:31Z" finished-at="2019-08-08T06:41:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.lastviewed.VerifyLastViewedBooksOrder -->
+      <class name="com.viacom.movies.VerifyMovies">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.movies.VerifyMovies@1500b2f3]" name="setup" is-config="true" duration-ms="4597" started-at="2019-08-08T05:33:38Z" finished-at="2019-08-08T05:33:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="VerifyMovies(java.util.Hashtable)[pri:0, instance:com.viacom.movies.VerifyMovies@1500b2f3]" name="VerifyMovies" duration-ms="0" started-at="2019-08-08T05:33:42Z" data-provider="getData" finished-at="2019-08-08T05:33:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8.792396107E9}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test as Run Mode was: NO]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test as Run Mode was: NO
+at com.viacom.movies.VerifyMovies.VerifyMovies(VerifyMovies.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyMovies -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.movies.VerifyMovies@1500b2f3]" name="tearDown" is-config="true" duration-ms="109" started-at="2019-08-08T05:33:42Z" finished-at="2019-08-08T05:33:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.movies.VerifyMovies -->
+      <class name="com.viacom.lastviewed.VerifyLastViewedEpisodesOrder">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedEpisodesOrder@d23e042]" name="setup" is-config="true" duration-ms="3730" started-at="2019-08-08T06:33:33Z" finished-at="2019-08-08T06:33:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyLastViewedEpisodes(java.util.Hashtable)[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedEpisodesOrder@d23e042]" name="VerifyLastViewedEpisodes" duration-ms="175119" started-at="2019-08-08T06:33:36Z" data-provider="getData" finished-at="2019-08-08T06:36:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.lastviewed.VerifyLastViewedEpisodesOrder.VerifyLastViewedEpisodes(VerifyLastViewedEpisodesOrder.java:75)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLastViewedEpisodes -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedEpisodesOrder@d23e042]" name="tearDown" is-config="true" duration-ms="1888" started-at="2019-08-08T06:36:31Z" finished-at="2019-08-08T06:36:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.lastviewed.VerifyLastViewedEpisodesOrder -->
+      <class name="com.viacom.vodplayer.VerifyVODContentConfigurableTrays">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.vodplayer.VerifyVODContentConfigurableTrays@169bb4dd]" name="setup" is-config="true" duration-ms="4629" started-at="2019-08-08T06:20:04Z" finished-at="2019-08-08T06:20:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyVODContentConfigurableTrays(java.util.Hashtable)[pri:0, instance:com.viacom.vodplayer.VerifyVODContentConfigurableTrays@169bb4dd]" name="VerifyVODContentConfigurableTrays" duration-ms="412329" started-at="2019-08-08T06:20:08Z" data-provider="getData" finished-at="2019-08-08T06:27:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=bhaskar, Runmode=Y, Email=9741039718}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Cannot get property 'items' on null object]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Cannot get property 'items' on null object
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:255)
+at com.jayway.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:53)
+at com.jayway.restassured.internal.path.json.JSONAssertion$getAsJsonObject.callCurrent(Unknown Source)
+at com.jayway.restassured.internal.path.json.JSONAssertion.getResult(JSONAssertion.groovy:28)
+at com.jayway.restassured.path.json.JsonPath.get(JsonPath.java:202)
+at com.viacom.vodplayer.VerifyVODContentConfigurableTrays.VerifyVODContentConfigurableTrays(VerifyVODContentConfigurableTrays.java:456)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException: Cannot get property 'items' on null object
+at org.codehaus.groovy.runtime.NullObject.getProperty(NullObject.java:60)
+at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:172)
+at org.codehaus.groovy.runtime.callsite.NullCallSite.getProperty(NullCallSite.java:47)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGetProperty(AbstractCallSite.java:296)
+at Script1.run(Script1.groovy:1)
+at groovy.lang.GroovyShell.evaluate(GroovyShell.java:591)
+at groovy.lang.GroovyShell.evaluate(GroovyShell.java:629)
+at groovy.lang.GroovyShell.evaluate(GroovyShell.java:600)
+at sun.reflect.GeneratedMethodAccessor48.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrap.invoke(PogoMetaMethodSite.java:190)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:71)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+at com.jayway.restassured.internal.path.json.JSONAssertion.eval(JSONAssertion.groovy:76)
+at sun.reflect.GeneratedMethodAccessor47.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+at com.jayway.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:46)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyVODContentConfigurableTrays -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.vodplayer.VerifyVODContentConfigurableTrays@169bb4dd]" name="tearDown" is-config="true" duration-ms="1795" started-at="2019-08-08T06:27:01Z" finished-at="2019-08-08T06:27:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.vodplayer.VerifyVODContentConfigurableTrays -->
+      <class name="com.viacom.parentzone.VerifyRecentActivityCardBehavior">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.parentzone.VerifyRecentActivityCardBehavior@126253fd]" name="setup" is-config="true" duration-ms="4581" started-at="2019-08-08T05:33:47Z" finished-at="2019-08-08T05:33:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyRecentActivityCardBehavior(java.util.Hashtable)[pri:0, instance:com.viacom.parentzone.VerifyRecentActivityCardBehavior@126253fd]" name="VerifyRecentActivityCardBehavior" duration-ms="73699" started-at="2019-08-08T05:33:52Z" data-provider="getData" finished-at="2019-08-08T05:35:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failed to click on Tab: Watch]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failed to click on Tab: Watch
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.tabClick(HomePageV2.java:1415)
+at com.viacom.parentzone.VerifyRecentActivityCardBehavior.VerifyRecentActivityCardBehavior(VerifyRecentActivityCardBehavior.java:133)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyRecentActivityCardBehavior -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.parentzone.VerifyRecentActivityCardBehavior@126253fd]" name="tearDown" is-config="true" duration-ms="1740" started-at="2019-08-08T05:35:06Z" finished-at="2019-08-08T05:35:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.parentzone.VerifyRecentActivityCardBehavior -->
+      <class name="com.viacom.lastviewed.VerifyLastViewedMoviesResumeMyStuff">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedMoviesResumeMyStuff@47caedad]" name="setup" is-config="true" duration-ms="4584" started-at="2019-08-08T05:27:12Z" finished-at="2019-08-08T05:27:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyLastViewedMoviesResumeMyStuff(java.util.Hashtable)[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedMoviesResumeMyStuff@47caedad]" name="VerifyLastViewedMoviesResumeMyStuff" duration-ms="64894" started-at="2019-08-08T05:27:17Z" data-provider="getData" finished-at="2019-08-08T05:28:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8.792396107E9}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failed to click on Tab: Watch]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failed to click on Tab: Watch
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.tabClick(HomePageV2.java:1415)
+at com.viacom.lastviewed.VerifyLastViewedMoviesResumeMyStuff.VerifyLastViewedMoviesResumeMyStuff(VerifyLastViewedMoviesResumeMyStuff.java:105)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLastViewedMoviesResumeMyStuff -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedMoviesResumeMyStuff@47caedad]" name="tearDown" is-config="true" duration-ms="1705" started-at="2019-08-08T05:28:22Z" finished-at="2019-08-08T05:28:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.lastviewed.VerifyLastViewedMoviesResumeMyStuff -->
+      <class name="com.viacom.audioplayer.VerifyPlayback">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.audioplayer.VerifyPlayback@475c9c31]" name="setup" is-config="true" duration-ms="4596" started-at="2019-08-08T05:37:26Z" finished-at="2019-08-08T05:37:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyPlayback(java.util.Hashtable)[pri:0, instance:com.viacom.audioplayer.VerifyPlayback@475c9c31]" name="VerifyPlayback" duration-ms="131863" started-at="2019-08-08T05:37:30Z" data-provider="getData" finished-at="2019-08-08T05:39:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.audioplayer.VerifyPlayback.VerifyPlayback(VerifyPlayback.java:73)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyPlayback -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.audioplayer.VerifyPlayback@475c9c31]" name="tearDown" is-config="true" duration-ms="1926" started-at="2019-08-08T05:39:42Z" finished-at="2019-08-08T05:39:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.audioplayer.VerifyPlayback -->
+      <class name="com.viacom.downloads.VerifyDownloads">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.downloads.VerifyDownloads@7dfd3c81]" name="setup" is-config="true" duration-ms="4603" started-at="2019-08-08T06:00:47Z" finished-at="2019-08-08T06:00:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyDownloads(java.util.Hashtable)[pri:0, instance:com.viacom.downloads.VerifyDownloads@7dfd3c81]" name="VerifyDownloads" duration-ms="131499" started-at="2019-08-08T06:00:51Z" data-provider="getData" finished-at="2019-08-08T06:03:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.downloads.VerifyDownloads.VerifyDownloads(VerifyDownloads.java:68)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDownloads -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.downloads.VerifyDownloads@7dfd3c81]" name="tearDown" is-config="true" duration-ms="1878" started-at="2019-08-08T06:03:03Z" finished-at="2019-08-08T06:03:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.downloads.VerifyDownloads -->
+      <class name="com.viacom.downloads.VerifyNoDownloads">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.downloads.VerifyNoDownloads@71687585]" name="setup" is-config="true" duration-ms="4619" started-at="2019-08-08T05:45:06Z" finished-at="2019-08-08T05:45:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyNoDownloads(java.util.Hashtable)[pri:0, instance:com.viacom.downloads.VerifyNoDownloads@71687585]" name="VerifyNoDownloads" duration-ms="128875" started-at="2019-08-08T05:45:11Z" data-provider="getData" finished-at="2019-08-08T05:47:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.downloads.VerifyNoDownloads.VerifyNoDownloads(VerifyNoDownloads.java:54)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyNoDownloads -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.downloads.VerifyNoDownloads@71687585]" name="tearDown" is-config="true" duration-ms="2075" started-at="2019-08-08T05:47:20Z" finished-at="2019-08-08T05:47:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.downloads.VerifyNoDownloads -->
+      <class name="com.viacom.smoketestscripts.VerifyRewards">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifyRewards@7fb4f2a9]" name="setup" is-config="true" duration-ms="4599" started-at="2019-08-08T05:52:36Z" finished-at="2019-08-08T05:52:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyRewards(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifyRewards@7fb4f2a9]" name="VerifyRewards" duration-ms="203374" started-at="2019-08-08T05:52:41Z" data-provider="getData" finished-at="2019-08-08T05:56:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyRewards -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifyRewards@7fb4f2a9]" name="tearDown" is-config="true" duration-ms="2448" started-at="2019-08-08T05:56:04Z" finished-at="2019-08-08T05:56:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.smoketestscripts.VerifyRewards -->
+      <class name="com.viacom.parentzone.VerifyActivitySegmentedTab">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.parentzone.VerifyActivitySegmentedTab@4f0f2942]" name="setup" is-config="true" duration-ms="4648" started-at="2019-08-08T05:22:02Z" finished-at="2019-08-08T05:22:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyActivitySegmentedTab(java.util.Hashtable)[pri:0, instance:com.viacom.parentzone.VerifyActivitySegmentedTab@4f0f2942]" name="VerifyActivitySegmentedTab" duration-ms="82921" started-at="2019-08-08T05:22:06Z" data-provider="getData" finished-at="2019-08-08T05:23:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=bhaskar, Runmode=Y, Email=9741039718}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyActivitySegmentedTab -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.parentzone.VerifyActivitySegmentedTab@4f0f2942]" name="tearDown" is-config="true" duration-ms="2027" started-at="2019-08-08T05:23:29Z" finished-at="2019-08-08T05:23:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.parentzone.VerifyActivitySegmentedTab -->
+      <class name="com.viacom.smoketestscripts.VerifyCharactersInCharactersTray">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifyCharactersInCharactersTray@6a4f1a55]" name="setup" is-config="true" duration-ms="4280" started-at="2019-08-08T05:58:24Z" finished-at="2019-08-08T05:58:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyCharactersInCharactersTray(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifyCharactersInCharactersTray@6a4f1a55]" name="VerifyCharactersInCharactersTray" duration-ms="136568" started-at="2019-08-08T05:58:28Z" data-provider="getData" finished-at="2019-08-08T06:00:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.smoketestscripts.VerifyCharactersInCharactersTray.VerifyCharactersInCharactersTray(VerifyCharactersInCharactersTray.java:64)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCharactersInCharactersTray -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifyCharactersInCharactersTray@6a4f1a55]" name="tearDown" is-config="true" duration-ms="1908" started-at="2019-08-08T06:00:45Z" finished-at="2019-08-08T06:00:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.smoketestscripts.VerifyCharactersInCharactersTray -->
+      <class name="com.viacom.lastviewed.VerifyLastViewedMoviesMetaData">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedMoviesMetaData@28cda624]" name="setup" is-config="true" duration-ms="4571" started-at="2019-08-08T05:32:07Z" finished-at="2019-08-08T05:32:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyLastViewedMoviesMetaData(java.util.Hashtable)[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedMoviesMetaData@28cda624]" name="VerifyLastViewedMoviesMetaData" duration-ms="84462" started-at="2019-08-08T05:32:12Z" data-provider="getData" finished-at="2019-08-08T05:33:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8.792396107E9}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLastViewedMoviesMetaData -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedMoviesMetaData@28cda624]" name="tearDown" is-config="true" duration-ms="1752" started-at="2019-08-08T05:33:36Z" finished-at="2019-08-08T05:33:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.lastviewed.VerifyLastViewedMoviesMetaData -->
+      <class name="com.viacom.favourites.VerifyFavouritesTrayAndIcon">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.favourites.VerifyFavouritesTrayAndIcon@2584b82d]" name="setup" is-config="true" duration-ms="4611" started-at="2019-08-08T06:03:05Z" finished-at="2019-08-08T06:03:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyFavouritesTrayAndIcon(java.util.Hashtable)[pri:0, instance:com.viacom.favourites.VerifyFavouritesTrayAndIcon@2584b82d]" name="VerifyFavouritesTrayAndIcon" duration-ms="130921" started-at="2019-08-08T06:03:09Z" data-provider="getData" finished-at="2019-08-08T06:05:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.favourites.VerifyFavouritesTrayAndIcon.VerifyFavouritesTrayAndIcon(VerifyFavouritesTrayAndIcon.java:56)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyFavouritesTrayAndIcon -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.favourites.VerifyFavouritesTrayAndIcon@2584b82d]" name="tearDown" is-config="true" duration-ms="1818" started-at="2019-08-08T06:05:20Z" finished-at="2019-08-08T06:05:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.favourites.VerifyFavouritesTrayAndIcon -->
+      <class name="com.viacom.lastviewed.VerifyLastViewedAudioOrder">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedAudioOrder@6cd24612]" name="setup" is-config="true" duration-ms="3769" started-at="2019-08-08T06:46:06Z" finished-at="2019-08-08T06:46:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyLastViewedAudioOrder(java.util.Hashtable)[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedAudioOrder@6cd24612]" name="VerifyLastViewedAudioOrder" duration-ms="130919" started-at="2019-08-08T06:46:09Z" data-provider="getData" finished-at="2019-08-08T06:48:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.lastviewed.VerifyLastViewedAudioOrder.VerifyLastViewedAudioOrder(VerifyLastViewedAudioOrder.java:84)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLastViewedAudioOrder -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedAudioOrder@6cd24612]" name="tearDown" is-config="true" duration-ms="1803" started-at="2019-08-08T06:48:20Z" finished-at="2019-08-08T06:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.lastviewed.VerifyLastViewedAudioOrder -->
+      <class name="com.viacom.parentzone.VerifyBedTimeForProfiles">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.parentzone.VerifyBedTimeForProfiles@2657d4dd]" name="setup" is-config="true" duration-ms="4268" started-at="2019-08-08T05:23:31Z" finished-at="2019-08-08T05:23:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyBedTimeForProfiles(java.util.Hashtable)[pri:0, instance:com.viacom.parentzone.VerifyBedTimeForProfiles@2657d4dd]" name="VerifyBedTimeForProfiles" duration-ms="142680" started-at="2019-08-08T05:23:36Z" data-provider="getData" finished-at="2019-08-08T05:25:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8.792396107E9}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyBedTimeForProfiles -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.parentzone.VerifyBedTimeForProfiles@2657d4dd]" name="tearDown" is-config="true" duration-ms="1714" started-at="2019-08-08T05:25:58Z" finished-at="2019-08-08T05:26:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.parentzone.VerifyBedTimeForProfiles -->
+      <class name="com.viacom.ebook.VerifyReaderPreviewAndRead">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.ebook.VerifyReaderPreviewAndRead@1807f5a7]" name="setup" is-config="true" duration-ms="4614" started-at="2019-08-08T05:47:22Z" finished-at="2019-08-08T05:47:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyReaderPreviewAndRead(java.util.Hashtable)[pri:0, instance:com.viacom.ebook.VerifyReaderPreviewAndRead@1807f5a7]" name="VerifyReaderPreviewAndRead" duration-ms="168336" started-at="2019-08-08T05:47:26Z" data-provider="getData" finished-at="2019-08-08T05:50:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.ebook.VerifyReaderPreviewAndRead.VerifyReaderPreviewAndRead(VerifyReaderPreviewAndRead.java:60)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyReaderPreviewAndRead -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.ebook.VerifyReaderPreviewAndRead@1807f5a7]" name="tearDown" is-config="true" duration-ms="2392" started-at="2019-08-08T05:50:15Z" finished-at="2019-08-08T05:50:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.ebook.VerifyReaderPreviewAndRead -->
+      <class name="com.viacom.lastviewed.VerifyLastViewedMovies">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedMovies@387a8303]" name="setup" is-config="true" duration-ms="4598" started-at="2019-08-08T05:30:55Z" finished-at="2019-08-08T05:31:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyLastViewedMovies(java.util.Hashtable)[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedMovies@387a8303]" name="VerifyLastViewedMovies" duration-ms="65477" started-at="2019-08-08T05:31:00Z" data-provider="getData" finished-at="2019-08-08T05:32:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8.792396107E9}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failed to click on Tab: Watch]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failed to click on Tab: Watch
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.tabClick(HomePageV2.java:1415)
+at com.viacom.lastviewed.VerifyLastViewedMovies.VerifyLastViewedMovies(VerifyLastViewedMovies.java:94)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLastViewedMovies -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedMovies@387a8303]" name="tearDown" is-config="true" duration-ms="1732" started-at="2019-08-08T05:32:05Z" finished-at="2019-08-08T05:32:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.lastviewed.VerifyLastViewedMovies -->
+      <class name="com.viacom.smoketestscripts.VerifyNotification">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.smoketestscripts.VerifyNotification@626abbd0]" name="setup" is-config="true" duration-ms="4609" started-at="2019-08-08T06:16:11Z" finished-at="2019-08-08T06:16:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyNotification(java.util.Hashtable)[pri:0, instance:com.viacom.smoketestscripts.VerifyNotification@626abbd0]" name="VerifyNotification" duration-ms="226005" started-at="2019-08-08T06:16:16Z" data-provider="getData" finished-at="2019-08-08T06:20:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.smoketestscripts.VerifyNotification.VerifyNotification(VerifyNotification.java:95)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyNotification -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.smoketestscripts.VerifyNotification@626abbd0]" name="tearDown" is-config="true" duration-ms="1848" started-at="2019-08-08T06:20:02Z" finished-at="2019-08-08T06:20:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.smoketestscripts.VerifyNotification -->
+      <class name="com.viacom.favourites.VerifyFavouriteAddedAudioAndEpisode">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.favourites.VerifyFavouriteAddedAudioAndEpisode@7d3e8655]" name="setup" is-config="true" duration-ms="4586" started-at="2019-08-08T06:11:01Z" finished-at="2019-08-08T06:11:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyFavouriteAddedAudioAndEpisode(java.util.Hashtable)[pri:0, instance:com.viacom.favourites.VerifyFavouriteAddedAudioAndEpisode@7d3e8655]" name="VerifyFavouriteAddedAudioAndEpisode" duration-ms="132020" started-at="2019-08-08T06:11:06Z" data-provider="getData" finished-at="2019-08-08T06:13:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.favourites.VerifyFavouriteAddedAudioAndEpisode.VerifyFavouriteAddedAudioAndEpisode(VerifyFavouriteAddedAudioAndEpisode.java:56)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyFavouriteAddedAudioAndEpisode -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.favourites.VerifyFavouriteAddedAudioAndEpisode@7d3e8655]" name="tearDown" is-config="true" duration-ms="1912" started-at="2019-08-08T06:13:18Z" finished-at="2019-08-08T06:13:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.favourites.VerifyFavouriteAddedAudioAndEpisode -->
+      <class name="com.viacom.favourites.VerifyFavouriteAddedBookAndNavigation">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.favourites.VerifyFavouriteAddedBookAndNavigation@7dfb0c0f]" name="setup" is-config="true" duration-ms="4594" started-at="2019-08-08T06:13:20Z" finished-at="2019-08-08T06:13:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyFavouriteAddedBookAndNavigation(java.util.Hashtable)[pri:0, instance:com.viacom.favourites.VerifyFavouriteAddedBookAndNavigation@7dfb0c0f]" name="VerifyFavouriteAddedBookAndNavigation" duration-ms="164734" started-at="2019-08-08T06:13:24Z" data-provider="getData" finished-at="2019-08-08T06:16:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.favourites.VerifyFavouriteAddedBookAndNavigation.VerifyFavouriteAddedBookAndNavigation(VerifyFavouriteAddedBookAndNavigation.java:76)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyFavouriteAddedBookAndNavigation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.favourites.VerifyFavouriteAddedBookAndNavigation@7dfb0c0f]" name="tearDown" is-config="true" duration-ms="2201" started-at="2019-08-08T06:16:09Z" finished-at="2019-08-08T06:16:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.favourites.VerifyFavouriteAddedBookAndNavigation -->
+      <class name="com.viacom.lastviewed.VerifyLastViewedUiMyStuffWatch">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedUiMyStuffWatch@5c7bfdc1]" name="setup" is-config="true" duration-ms="4608" started-at="2019-08-08T05:42:03Z" finished-at="2019-08-08T05:42:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyLastViewedEpisodes(java.util.Hashtable)[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedUiMyStuffWatch@5c7bfdc1]" name="VerifyLastViewedEpisodes" duration-ms="94647" started-at="2019-08-08T05:42:08Z" data-provider="getData" finished-at="2019-08-08T05:43:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failed to click on Tab: watch]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failed to click on Tab: watch
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.tabClick(HomePageV2.java:1415)
+at com.viacom.lastviewed.VerifyLastViewedUiMyStuffWatch.VerifyLastViewedEpisodes(VerifyLastViewedUiMyStuffWatch.java:78)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLastViewedEpisodes -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedUiMyStuffWatch@5c7bfdc1]" name="tearDown" is-config="true" duration-ms="2170" started-at="2019-08-08T05:43:43Z" finished-at="2019-08-08T05:43:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.lastviewed.VerifyLastViewedUiMyStuffWatch -->
+      <class name="com.viacom.lastviewed.VerifyLastViewedEpisodes">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedEpisodes@3aa078fd]" name="setup" is-config="true" duration-ms="4580" started-at="2019-08-08T06:29:56Z" finished-at="2019-08-08T06:30:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyLastViewedEpisodes(java.util.Hashtable)[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedEpisodes@3aa078fd]" name="VerifyLastViewedEpisodes" duration-ms="210628" started-at="2019-08-08T06:30:00Z" data-provider="getData" finished-at="2019-08-08T06:33:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.lastviewed.VerifyLastViewedEpisodes.VerifyLastViewedEpisodes(VerifyLastViewedEpisodes.java:87)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLastViewedEpisodes -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedEpisodes@3aa078fd]" name="tearDown" is-config="true" duration-ms="1783" started-at="2019-08-08T06:33:31Z" finished-at="2019-08-08T06:33:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.lastviewed.VerifyLastViewedEpisodes -->
+      <class name="com.viacom.lastviewed.VerifyLastViewedAudio">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedAudio@66ea810]" name="setup" is-config="true" duration-ms="4609" started-at="2019-08-08T06:43:49Z" finished-at="2019-08-08T06:43:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyLastReadBooks(java.util.Hashtable)[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedAudio@66ea810]" name="VerifyLastReadBooks" duration-ms="130487" started-at="2019-08-08T06:43:53Z" data-provider="getData" finished-at="2019-08-08T06:46:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.lastviewed.VerifyLastViewedAudio.VerifyLastReadBooks(VerifyLastViewedAudio.java:57)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLastReadBooks -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedAudio@66ea810]" name="tearDown" is-config="true" duration-ms="1848" started-at="2019-08-08T06:46:04Z" finished-at="2019-08-08T06:46:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.lastviewed.VerifyLastViewedAudio -->
+      <class name="com.viacom.movies.VerifyMoviePlayerFunctionalityTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.movies.VerifyMoviePlayerFunctionalityTest@7eecb5b8]" name="setup" is-config="true" duration-ms="4589" started-at="2019-08-08T05:33:43Z" finished-at="2019-08-08T05:33:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.viacom.movies.VerifyMoviePlayerFunctionalityTest@7eecb5b8]" name="loginTest" duration-ms="0" started-at="2019-08-08T05:33:47Z" data-provider="getData" finished-at="2019-08-08T05:33:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8.792396107E9}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test as Run Mode was: NO]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test as Run Mode was: NO
+at com.viacom.movies.VerifyMoviePlayerFunctionalityTest.loginTest(VerifyMoviePlayerFunctionalityTest.java:38)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.movies.VerifyMoviePlayerFunctionalityTest@7eecb5b8]" name="tearDown" is-config="true" duration-ms="94" started-at="2019-08-08T05:33:47Z" finished-at="2019-08-08T05:33:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.movies.VerifyMoviePlayerFunctionalityTest -->
+      <class name="com.viacom.uinavigation.VerifyCharacterShowCard">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.uinavigation.VerifyCharacterShowCard@4dc27487]" name="setup" is-config="true" duration-ms="3734" started-at="2019-08-08T05:56:06Z" finished-at="2019-08-08T05:56:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyCharacterShowCard(java.util.Hashtable)[pri:0, instance:com.viacom.uinavigation.VerifyCharacterShowCard@4dc27487]" name="VerifyCharacterShowCard" duration-ms="131681" started-at="2019-08-08T05:56:10Z" data-provider="getData" finished-at="2019-08-08T05:58:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=tanisha19, Runmode=Y, Email=8792396107}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.uinavigation.VerifyCharacterShowCard.VerifyCharacterShowCard(VerifyCharacterShowCard.java:55)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCharacterShowCard -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.uinavigation.VerifyCharacterShowCard@4dc27487]" name="tearDown" is-config="true" duration-ms="2002" started-at="2019-08-08T05:58:22Z" finished-at="2019-08-08T05:58:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.uinavigation.VerifyCharacterShowCard -->
+      <class name="com.viacom.lastviewed.VerifyLastViewedEpisodesResume">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedEpisodesResume@5dafbe45]" name="setup" is-config="true" duration-ms="4550" started-at="2019-08-08T06:48:22Z" finished-at="2019-08-08T06:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="VerifyLastViewedEpisodesResume(java.util.Hashtable)[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedEpisodesResume@5dafbe45]" name="VerifyLastViewedEpisodesResume" duration-ms="131991" started-at="2019-08-08T06:48:27Z" data-provider="getData" finished-at="2019-08-08T06:50:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=bhaskar, Runmode=Y, Email=9741039718}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+at com.viacom.pagesVersion2.HomePageV2.login(HomePageV2.java:1833)
+at com.viacom.lastviewed.VerifyLastViewedEpisodesResume.VerifyLastViewedEpisodesResume(VerifyLastViewedEpisodesResume.java:68)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLastViewedEpisodesResume -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.viacom.lastviewed.VerifyLastViewedEpisodesResume@5dafbe45]" name="tearDown" is-config="true" duration-ms="1831" started-at="2019-08-08T06:50:39Z" finished-at="2019-08-08T06:50:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.viacom.lastviewed.VerifyLastViewedEpisodesResume -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
+</testng-results>

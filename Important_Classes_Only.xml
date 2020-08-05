@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+
+      <class name="com.viacom.smoketestscripts.LoginFunctionalityTest"/>
+	  <class name="com.viacom.smoketestscripts.VerifySearchResultsTest"/>
+	  <class name="com.viacom.smoketestscripts.audioPlayerFunctionalityTest"/>
+	  <class name="com.viacom.smoketestscripts.VerifyDownloadEpisodeFunctionalityTest"/>
+	  <class name="com.viacom.smoketestscripts.SearchFunctionalityTabHilightingTest"/>
+      <class name="com.viacom.smoketestscripts.AudioBookDetailUITest"/>
+	  <class name="com.viacom.smoketestscripts.AudioForwardRewindFunctionalityTest"/>		
+	  <class name="com.viacom.smoketestscripts.DownloadFunctionalityTest"/>
+	  <class name="com.viacom.smoketestscripts.searchFunctionalityTest"/>
+	  <class name="com.viacom.smoketestscripts.VerifyAudioDownloadesMyStuffTabTest"/>
+	  <class name="com.viacom.smoketestscripts.VerifyShowDetailsPageFunctionalityTest"/>                     
+      <class name="com.viacom.smoketestscripts.VerifyBookDetailsPageFunctionalityTest"/>           
+      <class name="com.viacom.smoketestscripts.VerifyBookReaderFunctionalityTest"/>                   
+      <class name="com.viacom.smoketestscripts.VerifyVodPlayerFunctionalityTest"/>       
+      <class name="com.viacom.smoketestscripts.VerifyVodPlayerFavoritesRelatedFunctionality"/>   
+      <class name="com.viacom.smoketestscripts.VerifyVodPlayerPlaylistForFavoritedEpisode"/>  
+      <class name="com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest"/>
+	  <class name="com.viacom.smoketestscripts.VerifyEpisodesTray"/>
+   	  <class name="com.viacom.smoketestscripts.VerifyCardMetadata"/>
+      <class name="com.viacom.smoketestscripts.VerifyCardTypeInCarousal"/>
+      <class name="com.viacom.smoketestscripts.VerifyCountOfAssetsInCarousal"/>
+      <class name="com.viacom.smoketestscripts.VerifyDisplayCardOrderInCarousal"/> 
+      <class name="com.viacom.smoketestscripts.VerifyDownloads"/>   
+      <class name="com.viacom.smoketestscripts.VerifyThebehaviourofdownloadinebook1"/>
+      <class name="com.viacom.smoketestscripts.Verifythecardnavigation1"/>
+ 
+
+          
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

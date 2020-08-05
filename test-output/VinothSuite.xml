@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test1">
+    <classes>
+     
+        <class name="com.viacom.smoketestscripts.VootKidsCreateProfileScreenFunctionalityTest"/>                
+        <class name="com.viacom.smoketestscripts.VootKidsCreateProfile"/>      
+        <class name="com.viacom.smoketestscripts.VerifyEditProfileFunctionalitytest"/>                      
+        <class name="com.viacom.smoketestscripts.VerifySwitchProfileFunctionalityTest"/> 
+      
+        <class name="com.viacom.smoketestscripts.VerifyShowDetailsPageFunctionalityTest"/>                
+        <class name="com.viacom.smoketestscripts.VerifyShowDetailsPageEditorialSectionUITest"/>       
+        <class name="com.viacom.smoketestscripts.VerifyBookDetailsPageFunctionalityTest"/>                      
+       <class name="com.viacom.smoketestscripts.VerifyForwardRewindButtonFunctionalityTest"/>
+        <class name="com.viacom.smoketestscripts.VerifyVodPlayerFunctionalityTest"/>       
+        <class name="com.viacom.smoketestscripts.VerifyVodPlayerPlaylistUITest"/>      
+        <class name="com.viacom.smoketestscripts.VerifyVodPlayerSettingsFunctionalityTest"/>                                 
+        
+       
+      
+      
+      
+      
+    </classes>
+  </test>
+  
+</suite> 

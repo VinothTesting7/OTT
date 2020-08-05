@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test1">
+    <classes>
+    <!-- Vinoth2 suite -->
+        <class name="com.viacom.downloads.VerifyAudioBooksDownloadsFunctionalityTest"/>                
+        <class name="com.viacom.downloads.VerifyAudioBooksDownloadsInterruptionFunctionality"/>       
+        <class name="com.viacom.downloads.VerifyAudioBooksDownloadsLockUnlockInterruptionFunctionality"/>           
+        <class name="com.viacom.downloads.VerifyAudioBooksDownloadsSwitchAppInterruptionFunctionality"/> 
+        <class name="com.viacom.downloads.VerifyAudioBooksDownloadsKillAppInterruptionFunctionality"/>    
+        <class name="com.viacom.downloads.VerifyDownloadedAudioFunctionalityTest"/>  
+        <class name="com.viacom.downloads.VerifyDownloadedAudioPlaybackTest"/>
+        
+        
+        <class name="com.viacom.downloads.VerifyEBooksDownloadsFunctionalityTest"/> 
+        <class name="com.viacom.downloads.VerifyEbookDownloadsProgressFunctionalityTest"/>    
+        <class name="com.viacom.downloads.VerifyEBooksDownloadsInterruptionFunctionality"/> 
+        <class name="com.viacom.downloads.VerifyEBooksDownloadsLockUnlockInterruptionFunctionality"/>     
+        <class name="com.viacom.downloads.VerifyEBooksDownloadsSwitchAppInterruptionFunctionality"/>                
+        <class name="com.viacom.downloads.VerifyEBooksDownloadsKillAppInterruptionFunctionality"/> 
+        <class name="com.viacom.downloads.VerifyDownloadedBookFunctionalityTest"/>       
+            
+     
+               
+        <class name="com.viacom.downloads.VerifyEpisodeDownloadsProgressFunctionalityTest"/> 
+        <class name="com.viacom.downloads.VerifyEpisodeDownloadsProgressInterruptionFunctionalityTest"/>    
+        <class name="com.viacom.downloads.VerifyLockUnlockInterruptionDuringDownloadFunctionalityTest"/> 
+        <class name="com.viacom.downloads.VerifyKillLaunchInterruptionDuringEpisodeDownloadFunctionalityTest"/>     
+        <class name="com.viacom.downloads.VerifySwitchAppInterruptionDuringEpisodeDownloadFunctionality"/>                
+        <class name="com.viacom.downloads.VerifyDownloadedEpisodesPlaybackTest"/> 
+                  
+      
+      
+    </classes>
+  </test>
+  
+</suite> 

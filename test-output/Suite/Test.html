@@ -1,0 +1,970 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/4/5</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Aug 06 14:29:26 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>9190 seconds (9190215 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.viacom.downloads.VerifyThedownloadedEbooksadded.tearDown()'><b>tearDown</b><br>Test class: com.viacom.downloads.VerifyThedownloadedEbooksadded</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T15:15:08.936Z&apos;
+System info: host: &apos;IFOCUSODC-PC30&apos;, ip: &apos;192.168.12.123&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {BROWSER_NAME: Android, VERSION: 8.0.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, databaseEnabled: false, desired: {BROWSER_NAME: Android, VERSION: 8.0.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, deviceName: Samsung J5 Prime, fullReset: false, newCommandTimeout: 360, noReset: true, platformName: android, udid: 421042efc4159421, unlockKey: 1111, unlockType: pin}, deviceManufacturer: samsung, deviceModel: SM-G570F, deviceName: 421042efc4159421, deviceScreenSize: 720x1280, deviceUDID: 421042efc4159421, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 360, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 8.0.0, takesScreenshot: true, udid: 421042efc4159421, unlockKey: 1111, unlockType: pin, warnings: {}, webStorageEnabled: false}
+Session ID: 54025694-8bd7-4a53-b2d8-70f7a7ceadb5
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:443)
+	at com.viacom.smoketestscripts.BaseTestV2.tearDown(BaseTestV2.java:70)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace917223606", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace917223606'><pre>org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T15:15:08.936Z&apos;
+System info: host: &apos;IFOCUSODC-PC30&apos;, ip: &apos;192.168.12.123&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {BROWSER_NAME: Android, VERSION: 8.0.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, databaseEnabled: false, desired: {BROWSER_NAME: Android, VERSION: 8.0.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, deviceName: Samsung J5 Prime, fullReset: false, newCommandTimeout: 360, noReset: true, platformName: android, udid: 421042efc4159421, unlockKey: 1111, unlockType: pin}, deviceManufacturer: samsung, deviceModel: SM-G570F, deviceName: 421042efc4159421, deviceScreenSize: 720x1280, deviceUDID: 421042efc4159421, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 360, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 8.0.0, takesScreenshot: true, udid: 421042efc4159421, unlockKey: 1111, unlockType: pin, warnings: {}, webStorageEnabled: false}
+Session ID: 54025694-8bd7-4a53-b2d8-70f7a7ceadb5
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:443)
+	at com.viacom.smoketestscripts.BaseTestV2.tearDown(BaseTestV2.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.viacom.downloads.VerifyThedownloadedEbooksadded@7674f035</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.viacom.downloads.DownloadFunctionalityandLastreadUpdation.setup()'><b>setup</b><br>Test class: com.viacom.downloads.DownloadFunctionalityandLastreadUpdation</td>
+<td></td>
+<td>0</td>
+<td>com.viacom.downloads.DownloadFunctionalityandLastreadUpdation@69e153c5</td></tr>
+<tr>
+<td title='com.viacom.downloads.VerifyDownloadofPostPreviewingpages.setup()'><b>setup</b><br>Test class: com.viacom.downloads.VerifyDownloadofPostPreviewingpages</td>
+<td></td>
+<td>0</td>
+<td>com.viacom.downloads.VerifyDownloadofPostPreviewingpages@173ed316</td></tr>
+<tr>
+<td title='com.viacom.lastviewed.VerifyEbooksAddedtoMyStuff_LastViewed.setup()'><b>setup</b><br>Test class: com.viacom.lastviewed.VerifyEbooksAddedtoMyStuff_LastViewed</td>
+<td></td>
+<td>0</td>
+<td>com.viacom.lastviewed.VerifyEbooksAddedtoMyStuff_LastViewed@25ce9dc4</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.LoginFunctionalityTest.setup()'><b>setup</b><br>Test class: com.viacom.smoketestscripts.LoginFunctionalityTest</td>
+<td></td>
+<td>0</td>
+<td>com.viacom.smoketestscripts.LoginFunctionalityTest@74ea2410</td></tr>
+<tr>
+<td title='com.viacom.registration.VerifySignupandLoginLinkFunctionality.setup()'><b>setup</b><br>Test class: com.viacom.registration.VerifySignupandLoginLinkFunctionality</td>
+<td></td>
+<td>0</td>
+<td>com.viacom.registration.VerifySignupandLoginLinkFunctionality@17f62e33</td></tr>
+<tr>
+<td title='com.viacom.downloads.DownloadFunctionalityandLastreadUpdation.tearDown()'><b>tearDown</b><br>Test class: com.viacom.downloads.DownloadFunctionalityandLastreadUpdation</td>
+<td></td>
+<td>0</td>
+<td>com.viacom.downloads.DownloadFunctionalityandLastreadUpdation@69e153c5</td></tr>
+<tr>
+<td title='com.viacom.downloads.VerifyDownloadofPostPreviewingpages.tearDown()'><b>tearDown</b><br>Test class: com.viacom.downloads.VerifyDownloadofPostPreviewingpages</td>
+<td></td>
+<td>0</td>
+<td>com.viacom.downloads.VerifyDownloadofPostPreviewingpages@173ed316</td></tr>
+<tr>
+<td title='com.viacom.lastviewed.VerifyEbooksAddedtoMyStuff_LastViewed.tearDown()'><b>tearDown</b><br>Test class: com.viacom.lastviewed.VerifyEbooksAddedtoMyStuff_LastViewed</td>
+<td></td>
+<td>0</td>
+<td>com.viacom.lastviewed.VerifyEbooksAddedtoMyStuff_LastViewed@25ce9dc4</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.LoginFunctionalityTest.tearDown()'><b>tearDown</b><br>Test class: com.viacom.smoketestscripts.LoginFunctionalityTest</td>
+<td></td>
+<td>0</td>
+<td>com.viacom.smoketestscripts.LoginFunctionalityTest@74ea2410</td></tr>
+<tr>
+<td title='com.viacom.registration.VerifySignupandLoginLinkFunctionality.tearDown()'><b>tearDown</b><br>Test class: com.viacom.registration.VerifySignupandLoginLinkFunctionality</td>
+<td></td>
+<td>0</td>
+<td>com.viacom.registration.VerifySignupandLoginLinkFunctionality@17f62e33</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.viacom.uinavigation.VerifyEbooksCardNavigations.VerifyEbooksCardNavigations()'><b>VerifyEbooksCardNavigations</b><br>Test class: com.viacom.uinavigation.VerifyEbooksCardNavigations<br>Parameters: {Password=bhaskar, Runmode=Y, Email=9741039718}</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: java.io.IOException: unexpected end of stream on Connection{127.0.0.5:4727, proxy=DIRECT hostAddress=/127.0.0.5:4727 cipherSuite=none protocol=http/1.1}
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T15:15:08.936Z&apos;
+System info: host: &apos;IFOCUSODC-PC30&apos;, ip: &apos;192.168.12.123&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:233)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:771)
+	at com.viacom.utils.Utilities.explicitWaitClickableNew(Utilities.java:219)
+	at com.viacom.pagesVersion2.ReadPageV2.dismissReaderCoachCards(ReadPageV2.java:318)
+	at com.viacom.uinavigation.VerifyEbooksCardNavigations.VerifyEbooksCardNavigations(VerifyEbooksCardNavigations.java:159)
+Caused by: java.io.IOException: unexpected end of stream on Connection{127.0.0.5:4727, proxy=DIRECT hostAddress=/127.0.0.5:4727 cipherSuite=none protocol=http/1.1}
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:205)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	... 33 more
+Caused by: java.io.EOFException: \n not found: limit=0 content=…
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:212)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	... 51 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1685639133", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1685639133'><pre>org.openqa.selenium.WebDriverException: java.io.IOException: unexpected end of stream on Connection{127.0.0.5:4727, proxy=DIRECT hostAddress=/127.0.0.5:4727 cipherSuite=none protocol=http/1.1}
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T15:15:08.936Z&apos;
+System info: host: &apos;IFOCUSODC-PC30&apos;, ip: &apos;192.168.12.123&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:233)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:771)
+	at com.viacom.utils.Utilities.explicitWaitClickableNew(Utilities.java:219)
+	at com.viacom.pagesVersion2.ReadPageV2.dismissReaderCoachCards(ReadPageV2.java:318)
+	at com.viacom.uinavigation.VerifyEbooksCardNavigations.VerifyEbooksCardNavigations(VerifyEbooksCardNavigations.java:159)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.IOException: unexpected end of stream on Connection{127.0.0.5:4727, proxy=DIRECT hostAddress=/127.0.0.5:4727 cipherSuite=none protocol=http/1.1}
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:205)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	... 33 more
+Caused by: java.io.EOFException: \n not found: limit=0 content=…
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:212)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	... 51 more
+</pre></div></td>
+<td>1370</td>
+<td>com.viacom.uinavigation.VerifyEbooksCardNavigations@8f2ef19</td></tr>
+<tr>
+<td title='com.viacom.ebook.VerifyNumberfEbookardsunderUndereachTab.VerifyNumberfEbookardsunderUndereachTab()'><b>VerifyNumberfEbookardsunderUndereachTab</b><br>Test class: com.viacom.ebook.VerifyNumberfEbookardsunderUndereachTab<br>Parameters: {Password=bhaskar, Runmode=Y, Email=9741039718}</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: java.io.IOException: unexpected end of stream on Connection{127.0.0.5:4727, proxy=DIRECT hostAddress=/127.0.0.5:4727 cipherSuite=none protocol=http/1.1}
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T15:15:08.936Z&apos;
+System info: host: &apos;IFOCUSODC-PC30&apos;, ip: &apos;192.168.12.123&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:233)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:771)
+	at com.viacom.utils.Utilities.explicitWaitClickableNew(Utilities.java:219)
+	at com.viacom.pagesVersion2.ReadPageV2.dismissReaderCoachCards(ReadPageV2.java:318)
+	at com.viacom.ebook.VerifyNumberfEbookardsunderUndereachTab.VerifyNumberfEbookardsunderUndereachTab(VerifyNumberfEbookardsunderUndereachTab.java:184)
+Caused by: java.io.IOException: unexpected end of stream on Connection{127.0.0.5:4727, proxy=DIRECT hostAddress=/127.0.0.5:4727 cipherSuite=none protocol=http/1.1}
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:205)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	... 33 more
+Caused by: java.io.EOFException: \n not found: limit=0 content=…
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:212)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	... 51 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1269164140", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1269164140'><pre>org.openqa.selenium.WebDriverException: java.io.IOException: unexpected end of stream on Connection{127.0.0.5:4727, proxy=DIRECT hostAddress=/127.0.0.5:4727 cipherSuite=none protocol=http/1.1}
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T15:15:08.936Z&apos;
+System info: host: &apos;IFOCUSODC-PC30&apos;, ip: &apos;192.168.12.123&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:233)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:771)
+	at com.viacom.utils.Utilities.explicitWaitClickableNew(Utilities.java:219)
+	at com.viacom.pagesVersion2.ReadPageV2.dismissReaderCoachCards(ReadPageV2.java:318)
+	at com.viacom.ebook.VerifyNumberfEbookardsunderUndereachTab.VerifyNumberfEbookardsunderUndereachTab(VerifyNumberfEbookardsunderUndereachTab.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.IOException: unexpected end of stream on Connection{127.0.0.5:4727, proxy=DIRECT hostAddress=/127.0.0.5:4727 cipherSuite=none protocol=http/1.1}
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:205)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	... 33 more
+Caused by: java.io.EOFException: \n not found: limit=0 content=…
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:212)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	... 51 more
+</pre></div></td>
+<td>1365</td>
+<td>com.viacom.ebook.VerifyNumberfEbookardsunderUndereachTab@470734c3</td></tr>
+<tr>
+<td title='com.viacom.ebook.VerifyReaderPlayer_For_NoNarration.VerifyReaderPlayer_For_NoNarration()'><b>VerifyReaderPlayer_For_NoNarration</b><br>Test class: com.viacom.ebook.VerifyReaderPlayer_For_NoNarration<br>Parameters: {Password=bhaskar, Runmode=Y, booktitle=THE JUNGLE BOOK, Email=9741039718}</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: java.io.IOException: unexpected end of stream on Connection{127.0.0.5:4727, proxy=DIRECT hostAddress=/127.0.0.5:4727 cipherSuite=none protocol=http/1.1}
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T15:15:08.936Z&apos;
+System info: host: &apos;IFOCUSODC-PC30&apos;, ip: &apos;192.168.12.123&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:233)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:771)
+	at com.viacom.utils.Utilities.explicitWaitClickableNew(Utilities.java:219)
+	at com.viacom.pagesVersion2.ReadPageV2.dismissReaderCoachCards(ReadPageV2.java:318)
+	at com.viacom.ebook.VerifyReaderPlayer_For_NoNarration.VerifyReaderPlayer_For_NoNarration(VerifyReaderPlayer_For_NoNarration.java:210)
+Caused by: java.io.IOException: unexpected end of stream on Connection{127.0.0.5:4727, proxy=DIRECT hostAddress=/127.0.0.5:4727 cipherSuite=none protocol=http/1.1}
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:205)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	... 33 more
+Caused by: java.io.EOFException: \n not found: limit=0 content=…
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:212)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	... 51 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace233606356", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace233606356'><pre>org.openqa.selenium.WebDriverException: java.io.IOException: unexpected end of stream on Connection{127.0.0.5:4727, proxy=DIRECT hostAddress=/127.0.0.5:4727 cipherSuite=none protocol=http/1.1}
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T15:15:08.936Z&apos;
+System info: host: &apos;IFOCUSODC-PC30&apos;, ip: &apos;192.168.12.123&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:233)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:771)
+	at com.viacom.utils.Utilities.explicitWaitClickableNew(Utilities.java:219)
+	at com.viacom.pagesVersion2.ReadPageV2.dismissReaderCoachCards(ReadPageV2.java:318)
+	at com.viacom.ebook.VerifyReaderPlayer_For_NoNarration.VerifyReaderPlayer_For_NoNarration(VerifyReaderPlayer_For_NoNarration.java:210)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.IOException: unexpected end of stream on Connection{127.0.0.5:4727, proxy=DIRECT hostAddress=/127.0.0.5:4727 cipherSuite=none protocol=http/1.1}
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:205)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	... 33 more
+Caused by: java.io.EOFException: \n not found: limit=0 content=…
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:212)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	... 51 more
+</pre></div></td>
+<td>1361</td>
+<td>com.viacom.ebook.VerifyReaderPlayer_For_NoNarration@2cf3d63b</td></tr>
+<tr>
+<td title='com.viacom.downloads.VerifyThedownloadedEbooksadded.VerifyThedownloadedEbooksadded()'><b>VerifyThedownloadedEbooksadded</b><br>Test class: com.viacom.downloads.VerifyThedownloadedEbooksadded<br>Parameters: {Password=bhaskar, Runmode=Y, Email=9741039718}</td>
+<td><div><pre>java.lang.AssertionError: Failed to click on Tab: My Stuff
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.tabClick(HomePageV2.java:1415)
+	at com.viacom.downloads.VerifyThedownloadedEbooksadded.VerifyThedownloadedEbooksadded(VerifyThedownloadedEbooksadded.java:561)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace780160497", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace780160497'><pre>java.lang.AssertionError: Failed to click on Tab: My Stuff
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.viacom.pagesVersion2.BasePageV2.reportFail(BasePageV2.java:64)
+	at com.viacom.pagesVersion2.HomePageV2.tabClick(HomePageV2.java:1415)
+	at com.viacom.downloads.VerifyThedownloadedEbooksadded.VerifyThedownloadedEbooksadded(VerifyThedownloadedEbooksadded.java:561)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1634</td>
+<td>com.viacom.downloads.VerifyThedownloadedEbooksadded@7674f035</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.viacom.parentzone.VerifyAudiocardsUpdatedinUsagestats.VerifyAudiocardsUpdatedinUsagestats()'><b>VerifyAudiocardsUpdatedinUsagestats</b><br>Test class: com.viacom.parentzone.VerifyAudiocardsUpdatedinUsagestats<br>Parameters: {Password=bhaskar, Runmode=Y, Email=9741039718}</td>
+<td></td>
+<td>1700</td>
+<td>com.viacom.parentzone.VerifyAudiocardsUpdatedinUsagestats@4b741d6d</td></tr>
+<tr>
+<td title='com.viacom.parentzone.VerifyWatchedEpisodesUpadateinusagestats.VerifyWatchedEpisodesUpadateinusagestats()'><b>VerifyWatchedEpisodesUpadateinusagestats</b><br>Test class: com.viacom.parentzone.VerifyWatchedEpisodesUpadateinusagestats<br>Parameters: {Password=bhaskar, Runmode=Y, Email=9741039718}</td>
+<td></td>
+<td>1713</td>
+<td>com.viacom.parentzone.VerifyWatchedEpisodesUpadateinusagestats@2eae8e6e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.viacom.downloads.DownloadFunctionalityandLastreadUpdation.DownloadFunctionalityandLastreadUpdation()'><b>DownloadFunctionalityandLastreadUpdation</b><br>Test class: com.viacom.downloads.DownloadFunctionalityandLastreadUpdation</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T15:15:08.936Z&apos;
+System info: host: &apos;IFOCUSODC-PC30&apos;, ip: &apos;192.168.12.123&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {BROWSER_NAME: Android, VERSION: 8.0.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, databaseEnabled: false, desired: {BROWSER_NAME: Android, VERSION: 8.0.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, deviceName: Samsung J5 Prime, fullReset: false, newCommandTimeout: 360, noReset: true, platformName: android, udid: 421042efc4159421, unlockKey: 1111, unlockType: pin}, deviceManufacturer: samsung, deviceModel: SM-G570F, deviceName: 421042efc4159421, deviceScreenSize: 720x1280, deviceUDID: 421042efc4159421, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 360, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 8.0.0, takesScreenshot: true, udid: 421042efc4159421, unlockKey: 1111, unlockType: pin, warnings: {}, webStorageEnabled: false}
+Session ID: 54025694-8bd7-4a53-b2d8-70f7a7ceadb5
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:443)
+	at com.viacom.smoketestscripts.BaseTestV2.tearDown(BaseTestV2.java:70)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace543783101", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace543783101'><pre>org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T15:15:08.936Z&apos;
+System info: host: &apos;IFOCUSODC-PC30&apos;, ip: &apos;192.168.12.123&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {BROWSER_NAME: Android, VERSION: 8.0.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, databaseEnabled: false, desired: {BROWSER_NAME: Android, VERSION: 8.0.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, deviceName: Samsung J5 Prime, fullReset: false, newCommandTimeout: 360, noReset: true, platformName: android, udid: 421042efc4159421, unlockKey: 1111, unlockType: pin}, deviceManufacturer: samsung, deviceModel: SM-G570F, deviceName: 421042efc4159421, deviceScreenSize: 720x1280, deviceUDID: 421042efc4159421, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 360, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 8.0.0, takesScreenshot: true, udid: 421042efc4159421, unlockKey: 1111, unlockType: pin, warnings: {}, webStorageEnabled: false}
+Session ID: 54025694-8bd7-4a53-b2d8-70f7a7ceadb5
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:443)
+	at com.viacom.smoketestscripts.BaseTestV2.tearDown(BaseTestV2.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.viacom.downloads.DownloadFunctionalityandLastreadUpdation@69e153c5</td></tr>
+<tr>
+<td title='com.viacom.downloads.VerifyDownloadofPostPreviewingpages.VerifyDownloadofPostPreviewingpages()'><b>VerifyDownloadofPostPreviewingpages</b><br>Test class: com.viacom.downloads.VerifyDownloadofPostPreviewingpages</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T15:15:08.936Z&apos;
+System info: host: &apos;IFOCUSODC-PC30&apos;, ip: &apos;192.168.12.123&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {BROWSER_NAME: Android, VERSION: 8.0.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, databaseEnabled: false, desired: {BROWSER_NAME: Android, VERSION: 8.0.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, deviceName: Samsung J5 Prime, fullReset: false, newCommandTimeout: 360, noReset: true, platformName: android, udid: 421042efc4159421, unlockKey: 1111, unlockType: pin}, deviceManufacturer: samsung, deviceModel: SM-G570F, deviceName: 421042efc4159421, deviceScreenSize: 720x1280, deviceUDID: 421042efc4159421, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 360, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 8.0.0, takesScreenshot: true, udid: 421042efc4159421, unlockKey: 1111, unlockType: pin, warnings: {}, webStorageEnabled: false}
+Session ID: 54025694-8bd7-4a53-b2d8-70f7a7ceadb5
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:443)
+	at com.viacom.smoketestscripts.BaseTestV2.tearDown(BaseTestV2.java:70)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace456084235", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace456084235'><pre>org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T15:15:08.936Z&apos;
+System info: host: &apos;IFOCUSODC-PC30&apos;, ip: &apos;192.168.12.123&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {BROWSER_NAME: Android, VERSION: 8.0.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, databaseEnabled: false, desired: {BROWSER_NAME: Android, VERSION: 8.0.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, deviceName: Samsung J5 Prime, fullReset: false, newCommandTimeout: 360, noReset: true, platformName: android, udid: 421042efc4159421, unlockKey: 1111, unlockType: pin}, deviceManufacturer: samsung, deviceModel: SM-G570F, deviceName: 421042efc4159421, deviceScreenSize: 720x1280, deviceUDID: 421042efc4159421, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 360, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 8.0.0, takesScreenshot: true, udid: 421042efc4159421, unlockKey: 1111, unlockType: pin, warnings: {}, webStorageEnabled: false}
+Session ID: 54025694-8bd7-4a53-b2d8-70f7a7ceadb5
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:443)
+	at com.viacom.smoketestscripts.BaseTestV2.tearDown(BaseTestV2.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.viacom.downloads.VerifyDownloadofPostPreviewingpages@173ed316</td></tr>
+<tr>
+<td title='com.viacom.lastviewed.VerifyEbooksAddedtoMyStuff_LastViewed.VerifyEbooksAddedtoMyStuff_LastViewed()'><b>VerifyEbooksAddedtoMyStuff_LastViewed</b><br>Test class: com.viacom.lastviewed.VerifyEbooksAddedtoMyStuff_LastViewed</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T15:15:08.936Z&apos;
+System info: host: &apos;IFOCUSODC-PC30&apos;, ip: &apos;192.168.12.123&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {BROWSER_NAME: Android, VERSION: 8.0.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, databaseEnabled: false, desired: {BROWSER_NAME: Android, VERSION: 8.0.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, deviceName: Samsung J5 Prime, fullReset: false, newCommandTimeout: 360, noReset: true, platformName: android, udid: 421042efc4159421, unlockKey: 1111, unlockType: pin}, deviceManufacturer: samsung, deviceModel: SM-G570F, deviceName: 421042efc4159421, deviceScreenSize: 720x1280, deviceUDID: 421042efc4159421, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 360, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 8.0.0, takesScreenshot: true, udid: 421042efc4159421, unlockKey: 1111, unlockType: pin, warnings: {}, webStorageEnabled: false}
+Session ID: 54025694-8bd7-4a53-b2d8-70f7a7ceadb5
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:443)
+	at com.viacom.smoketestscripts.BaseTestV2.tearDown(BaseTestV2.java:70)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2061428518", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2061428518'><pre>org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T15:15:08.936Z&apos;
+System info: host: &apos;IFOCUSODC-PC30&apos;, ip: &apos;192.168.12.123&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {BROWSER_NAME: Android, VERSION: 8.0.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, databaseEnabled: false, desired: {BROWSER_NAME: Android, VERSION: 8.0.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, deviceName: Samsung J5 Prime, fullReset: false, newCommandTimeout: 360, noReset: true, platformName: android, udid: 421042efc4159421, unlockKey: 1111, unlockType: pin}, deviceManufacturer: samsung, deviceModel: SM-G570F, deviceName: 421042efc4159421, deviceScreenSize: 720x1280, deviceUDID: 421042efc4159421, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 360, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 8.0.0, takesScreenshot: true, udid: 421042efc4159421, unlockKey: 1111, unlockType: pin, warnings: {}, webStorageEnabled: false}
+Session ID: 54025694-8bd7-4a53-b2d8-70f7a7ceadb5
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:443)
+	at com.viacom.smoketestscripts.BaseTestV2.tearDown(BaseTestV2.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.viacom.lastviewed.VerifyEbooksAddedtoMyStuff_LastViewed@25ce9dc4</td></tr>
+<tr>
+<td title='com.viacom.registration.VerifySignupandLoginLinkFunctionality.VerifySignupandLoginLinkFunctionality()'><b>VerifySignupandLoginLinkFunctionality</b><br>Test class: com.viacom.registration.VerifySignupandLoginLinkFunctionality</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T15:15:08.936Z&apos;
+System info: host: &apos;IFOCUSODC-PC30&apos;, ip: &apos;192.168.12.123&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {BROWSER_NAME: Android, VERSION: 8.0.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, databaseEnabled: false, desired: {BROWSER_NAME: Android, VERSION: 8.0.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, deviceName: Samsung J5 Prime, fullReset: false, newCommandTimeout: 360, noReset: true, platformName: android, udid: 421042efc4159421, unlockKey: 1111, unlockType: pin}, deviceManufacturer: samsung, deviceModel: SM-G570F, deviceName: 421042efc4159421, deviceScreenSize: 720x1280, deviceUDID: 421042efc4159421, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 360, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 8.0.0, takesScreenshot: true, udid: 421042efc4159421, unlockKey: 1111, unlockType: pin, warnings: {}, webStorageEnabled: false}
+Session ID: 54025694-8bd7-4a53-b2d8-70f7a7ceadb5
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:443)
+	at com.viacom.smoketestscripts.BaseTestV2.tearDown(BaseTestV2.java:70)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace488407178", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace488407178'><pre>org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T15:15:08.936Z&apos;
+System info: host: &apos;IFOCUSODC-PC30&apos;, ip: &apos;192.168.12.123&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {BROWSER_NAME: Android, VERSION: 8.0.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, databaseEnabled: false, desired: {BROWSER_NAME: Android, VERSION: 8.0.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, deviceName: Samsung J5 Prime, fullReset: false, newCommandTimeout: 360, noReset: true, platformName: android, udid: 421042efc4159421, unlockKey: 1111, unlockType: pin}, deviceManufacturer: samsung, deviceModel: SM-G570F, deviceName: 421042efc4159421, deviceScreenSize: 720x1280, deviceUDID: 421042efc4159421, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 360, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 8.0.0, takesScreenshot: true, udid: 421042efc4159421, unlockKey: 1111, unlockType: pin, warnings: {}, webStorageEnabled: false}
+Session ID: 54025694-8bd7-4a53-b2d8-70f7a7ceadb5
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:443)
+	at com.viacom.smoketestscripts.BaseTestV2.tearDown(BaseTestV2.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.viacom.registration.VerifySignupandLoginLinkFunctionality@17f62e33</td></tr>
+<tr>
+<td title='com.viacom.smoketestscripts.LoginFunctionalityTest.loginTest()'><b>loginTest</b><br>Test class: com.viacom.smoketestscripts.LoginFunctionalityTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T15:15:08.936Z&apos;
+System info: host: &apos;IFOCUSODC-PC30&apos;, ip: &apos;192.168.12.123&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {BROWSER_NAME: Android, VERSION: 8.0.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, databaseEnabled: false, desired: {BROWSER_NAME: Android, VERSION: 8.0.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, deviceName: Samsung J5 Prime, fullReset: false, newCommandTimeout: 360, noReset: true, platformName: android, udid: 421042efc4159421, unlockKey: 1111, unlockType: pin}, deviceManufacturer: samsung, deviceModel: SM-G570F, deviceName: 421042efc4159421, deviceScreenSize: 720x1280, deviceUDID: 421042efc4159421, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 360, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 8.0.0, takesScreenshot: true, udid: 421042efc4159421, unlockKey: 1111, unlockType: pin, warnings: {}, webStorageEnabled: false}
+Session ID: 54025694-8bd7-4a53-b2d8-70f7a7ceadb5
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:443)
+	at com.viacom.smoketestscripts.BaseTestV2.tearDown(BaseTestV2.java:70)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1597443396", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1597443396'><pre>org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T15:15:08.936Z&apos;
+System info: host: &apos;IFOCUSODC-PC30&apos;, ip: &apos;192.168.12.123&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {BROWSER_NAME: Android, VERSION: 8.0.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, databaseEnabled: false, desired: {BROWSER_NAME: Android, VERSION: 8.0.0, appActivity: com.tv.vootkids.ui.home.VKH..., appPackage: com.viacom18.vootkids, autoDismissAlerts: true, deviceName: Samsung J5 Prime, fullReset: false, newCommandTimeout: 360, noReset: true, platformName: android, udid: 421042efc4159421, unlockKey: 1111, unlockType: pin}, deviceManufacturer: samsung, deviceModel: SM-G570F, deviceName: 421042efc4159421, deviceScreenSize: 720x1280, deviceUDID: 421042efc4159421, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 360, noReset: true, platform: LINUX, platformName: LINUX, platformVersion: 8.0.0, takesScreenshot: true, udid: 421042efc4159421, unlockKey: 1111, unlockType: pin, warnings: {}, webStorageEnabled: false}
+Session ID: 54025694-8bd7-4a53-b2d8-70f7a7ceadb5
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:443)
+	at com.viacom.smoketestscripts.BaseTestV2.tearDown(BaseTestV2.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.viacom.smoketestscripts.LoginFunctionalityTest@74ea2410</td></tr>
+</table><p>
+</body>
+</html>

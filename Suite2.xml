@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+          <classes>
+  <!-- Bhaskar suite -->
+
+                          
+                      
+               <!--     <class name="com.viacom.parentzone.VerifyParentZoneForNewUser"/>
+                         <class name="com.viacom.audioplayer.audioPlayerFunctionalityTest"/> 
+                         <class name="com.viacom.parentzone.VerifyTCsAfterSignUp"/>
+                        <class name="com.viacom.parentzone.PlaybackStatus_countinUsagestatsforEbooks"/> 
+                        <class name="com.viacom.parentzone.VerifyAudiocardsUpdatedinUsagestats"/>
+                        <class name="com.viacom.parentzone.VerifyWatchedEpisodesUpadateinusagestats"/> 
+                       <class name="com.viacom.uinavigation.VerifyEbooksCardNavigations"/>
+                       <class name="com.viacom.ebook.VerifyNumberfEbookardsunderUndereachTab"/>
+                        <class name="com.viacom.ebook.VerifyReaderPlayer_For_NoNarration"/> 
+                        <class name="com.viacom.downloads.VerifyThedownloadedEbooksadded"/>   -->                
+                        <class name="com.viacom.downloads.DownloadFunctionalityandLastreadUpdation"/>  
+                         <class name="com.viacom.downloads.VerifyDownloadofPostPreviewingpages"/>  
+                         <class name="com.viacom.lastviewed.VerifyEbooksAddedtoMyStuff_LastViewed"/>
+                         <class name="com.viacom.smoketestscripts.LoginFunctionalityTest"/>
+                         <class name="com.viacom.registration.VerifySignupandLoginLinkFunctionality"/>
+                         
+                         
+                      
+                          
+      
+      
+         </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+    
